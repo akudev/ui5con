@@ -2,8 +2,9 @@
 /* imports */
 @import url(core.css);
 @import url(mod_header.css);
-@import url(mod_agenda.css);
+@import url(mod_lineup.css);
 @import url(mod_info.css);
 @import url(mod_footer.css);
 @import url(mod_direction.css);
+@import url(mod_agenda.css);
 

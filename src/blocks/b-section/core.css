@@ -12,3 +12,8 @@
         margin: 0 auto;
         }
 }
+
+.b-section-h.mod_tracks {
+    display: flex;
+    flex-direction: row;
+}

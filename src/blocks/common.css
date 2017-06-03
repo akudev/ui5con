@@ -194,3 +194,22 @@ a:hover {
 #hideButton.less #moreButton{
     display: none;
 }
+
+.b-floatButton {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: #ff5743;
+    color: white;
+    cursor: pointer;
+    padding: 18px 13px;
+    border-radius: 25px;
+}
+
+.b-floatButton:hover {
+    background-color: #ffa242;
+}

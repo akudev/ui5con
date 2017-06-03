@@ -1,0 +1,30 @@
+.b-list.mod_lineup {
+    justify-content: flex-start;
+    }
+    .b-list.mod_lineup .b-list__item {
+        width: 20%;
+        }
+
+@media (max-width: 1210px) {
+    .b-list.mod_lineup .b-list__item {
+        width: 25%;
+    }
+}
+
+@media (max-width: 980px) {
+    .b-list.mod_lineup .b-list__item {
+        width: 33.33%;
+    }
+}
+
+@media (max-width: 700px) {
+    .b-list.mod_lineup .b-list__item {
+        width: 50%;
+    }
+}
+
+@media (max-width: 550px) {
+    .b-list.mod_lineup .b-list__item {
+        width: 100%;
+    }
+}

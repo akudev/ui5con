@@ -15,7 +15,13 @@
         bottom: 25px;
         right: 25px;
         }
-    .b-topic:before {
+    .b-topic__time {
+         position: absolute;
+         bottom: 25px;
+         left: 25px;
+     }
+
+.b-topic:before {
         position: absolute;
         top: 0;
         left: 0;

@@ -1,13 +1,11 @@
-/* mod_agenda */
+/* mod_lineup */
 .b-section.mod_agenda {
-    margin-top: 90px;
-    padding: 70px 0;
-    background-color: #19181e;
-    }
-
+	padding: 70px 0;
+	background-color: #19181e;
+}
 
 @media (max-width: 550px) {
-    .b-section.mod_agenda {
-        padding: 40px 0;
-    }
+	.b-section.mod_agenda {
+		padding: 40px 0;
+	}
 }

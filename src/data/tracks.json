@@ -1,0 +1,310 @@
+{
+	"track1": [
+		{
+			"title": " Welcome",
+			"speaker": "Frederic Berg",
+			"type": "Session",
+			"duration": 20
+		},
+		{
+			"title": "UI5 News",
+			"speaker": "Stefan Beck",
+			"type": "session",
+			"duration": 40
+		},
+		{
+			"type": "break",
+			"duration": 10
+		},
+		{
+			"title": "UI5 Evolution – increase performance, fix architectural gaps, embrace technologies",
+			"speaker": "Peter Muessig, Andreas Ecker",
+			"type": "session",
+			"duration": 40
+		},
+		{
+			"type": "break",
+			"duration": 10
+		},
+		{
+			"title": " SAPUI5 on SAP HANA XSA - SAP Full-stack JavaScript Development",
+			"speaker": "HP Seitz",
+			"type": "session",
+			"duration": 40
+		},
+		{
+			"type": "break",
+			"duration": 10
+		},
+		{
+			"title": "Upcoming – UI5 OData V4 Model",
+			"speaker": "Patric Ksinsik, Thomas Chadzelek",
+			"type": "session",
+			"duration": 40
+		},
+		{
+			"type": "break",
+			"duration": 50
+		},
+		{
+			"title": "Simplify UI5 Tool Setup - One Node.js Module to Serve Them All",
+			"speaker": "Maximilian Lenkeit",
+			"type": "session",
+			"duration": 20
+		},
+		{
+			"type": "break",
+			"duration": 10
+		},
+		{
+			"title": "Building a companion conversational UI for a Fiori App",
+			"speaker": "Gregor Brett",
+			"type": "session",
+			"duration": 20
+		},
+		{
+			"type": "break",
+			"duration": 10
+		},
+		{
+			"title": " Mixed Reality with OpenUI5",
+			"speaker": "Dmitriy Buslov",
+			"type": "session",
+			"duration": 20
+		},
+		{
+			"type": "break",
+			"duration": 10
+		},
+		{
+			"title": "Collaborators Wanted – The UI5 Community and SAP present the “Custom UI5 Repo”",
+			"speaker": "Michael Graf",
+			"type": "session",
+			"duration": 20
+		},
+		{
+			"type": "break",
+			"duration": 10
+		},
+		{
+			"title": "IoT full stack scenario",
+			"speaker": "Mateusz Skadorwa, Tomasz Wilk",
+			"type": "session",
+			"duration": 40
+		},
+		{
+			"type": "break",
+			"duration": 10
+		},
+		{
+			"title": "Continuous Integration: Build process & automated testing of UI5 Apps",
+			"speaker": "Matthias Oßwald, Merlin Beutlberger",
+			"type": "session",
+			"duration": 40
+		},
+		{
+			"type": "break",
+			"duration": 10
+		},
+		{
+			"title": "experiments with real-time Image processing and Augmented Reality in UI5",
+			"speaker": " Volker Buzek",
+			"type": "session",
+			"duration": 20
+		},
+		{
+			"type": "break",
+			"duration": 10
+		},
+		{
+			"title": "From native Android to UI5",
+			"speaker": "Jan Zaruba, Tomas Krejci",
+			"type": "session",
+			"duration": 20
+		},
+		{
+			"title": "Closing words",
+			"type": "break",
+			"duration": 10
+		}
+	],
+	"track2": [
+		{
+			"type": "break",
+			"duration": 70
+		},
+		{
+			"title": " Open-sourcing Offline UI5 apps",
+			"speaker": " Tom Van Doorslaer",
+			"type": "session",
+			"duration": 40
+		},
+		{
+			"type": "break",
+			"duration": 10
+		},
+		{
+			"title": " Plug in your feature into SAP Web IDE",
+			"speaker": " Wouter Lemaire, Vered Constantin",
+			"type": "session",
+			"duration": 40
+		},
+		{
+			"type": "break",
+			"duration": 10
+		},
+		{
+			"title": "UI5 Theming explained",
+			"speaker": " Matthias Oßwald",
+			"type": "session",
+			"duration": 20
+		},
+		{
+			"type": "break",
+			"duration": 50
+		},
+		{
+			"title": " UI5 Supportability Reloaded",
+			"speaker": " Gergana Kremenska",
+			"type": "session",
+			"duration": 40
+		},
+		{
+			"type": "break",
+			"duration": 10
+		},
+		{
+			"title": " Working with PDFs in a (mobile) UI5 App",
+			"speaker": " Vincent Weiss",
+			"type": "session",
+			"duration": 20
+		},
+		{
+			"type": "break",
+			"duration": 10
+		},
+		{
+			"title": "UI5 Apps beyond the office",
+			"speaker": "Denny Schreber",
+			"type": "session",
+			"duration": 20
+		},
+		{
+			"type": "break",
+			"duration": 10
+		},
+		{
+			"title": "Controlling UI5 Apps and FLP via Speech",
+			"speaker": "Aparna Narayanaswamy",
+			"type": "session",
+			"duration": 20
+		},
+		{
+			"type": "break",
+			"duration": 10
+		},
+		{
+			"title": "A modern OpenUI5 app project boilerplate",
+			"speaker": "Michael Dell, Jascha Quintern",
+			"type": "session",
+			"duration": 40
+		},
+		{
+			"type": "break",
+			"duration": 10
+		},
+		{
+			"title": "Why you should keep an eye on SAPUI5 Flexibility",
+			"speaker": "Alexander Rauh",
+			"type": "session",
+			"duration": 40
+		},
+		{
+			"type": "break",
+			"duration": 10
+		},
+		{
+			"title": "Leveraging Service Workers",
+			"speaker": "Benedikt Schölch, Tobias Sorn",
+			"type": "session",
+			"duration": 20
+		},
+		{
+			"type": "break",
+			"duration": 10
+		},
+		{
+			"title": "Developing Custom ESLint Rules ",
+			"speaker": "Alexander Flammer",
+			"type": "session",
+			"duration": 20
+		},
+		{
+			"type": "break",
+			"duration": 10
+		}
+	],
+	"track3": [
+		{
+			"type": "break",
+			"duration": 70
+		},
+		{
+			"title": "Write reliable application tests for your SAP UI5 application",
+			"speaker": " Maxim Naidenov",
+			"type": "session",
+			"duration": 60
+		},
+		{
+			"type": "break",
+			"duration": 10
+		},
+		{
+			"title": "Writing a real time geolocation map using XMPPJSONPatchSyncModel and openlayers",
+			"speaker": "Manuel Blechschmidt",
+			"type": "session",
+			"duration": 60
+		},
+		{
+			"type": "break",
+			"duration": 50
+		},
+		{
+			"title": "Introduce functional programming techniques to your UI5 app codebase!",
+			"speaker": "DJ Adams",
+			"type": "session",
+			"duration": 60
+		},
+		{
+			"type": "break",
+			"duration": 10
+		},		{
+			"title": "FLP meets SAPUI5 – extending the Fiori Launchpad",
+			"speaker": "Thilo Seidel",
+			"type": "session",
+			"duration": 60
+		},
+		{
+			"type": "break",
+			"duration": 10
+		},		{
+			"title": "Fiori 2.0 for Your Application",
+			"speaker": "Stanislava Baltova, Yavor Ivanov",
+			"type": "session",
+			"duration": 60
+		},
+		{
+			"type": "break",
+			"duration": 10
+		},		{
+			"title": "Getting started with UI5 on Cloud Foundry",
+			"speaker": "Frederic Berg",
+			"type": "session",
+			"duration": 60
+		},
+		{
+			"type": "break",
+			"duration": 10
+		}
+	]
+}
