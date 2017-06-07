@@ -1,0 +1,50 @@
+{
+	"booth1": [
+		{
+			"title": " Welcome",
+			"speaker": "Frederic Berg",
+			"type": "Session",
+			"duration": 20
+		},
+		{
+			"title": "UI5 News",
+			"speaker": "Stefan Beck",
+			"type": "session",
+			"duration": 40
+		},
+		{
+			"type": "break",
+			"duration": 10
+		},
+		{
+			"title": "UI5 Evolution – increase performance, fix architectural gaps, embrace technologies",
+			"speaker": "Peter Muessig, Andreas Ecker",
+			"type": "session",
+			"duration": 40
+		}
+	],
+	"booth2": [
+		{
+			"type": "break",
+			"duration": 70
+		},
+		{
+			"title": " Open-sourcing Offline UI5 apps",
+			"speaker": " Tom Van Doorslaer",
+			"type": "session",
+			"duration": 40
+		}
+	],
+	"booth3": [
+		{
+			"type": "break",
+			"duration": 70
+		},
+		{
+			"title": "Write reliable application tests for your SAP UI5 application",
+			"speaker": " Maxim Naidenov",
+			"type": "session",
+			"duration": 60
+		}
+	]
+}
