@@ -1,0 +1,45 @@
+.b-track {
+	width: 30%;
+}
+
+	.b-track__header {
+		height: 40px;
+		text-align: center;
+		text-transform: uppercase;
+	}
+
+	.b-track__item {
+		border: 1px solid #19181e;
+	}
+
+	.b-track__item.duration_10 {
+		height: 80px;
+	}
+
+	.b-track__item.duration_20 {
+		height: 160px;
+	}
+
+	.b-track__item.duration_30 {
+		height: 240px;
+	}
+
+	.b-track__item.duration_40 {
+		height: 320px;
+	}
+
+	.b-track__item.duration_50 {
+		height: 400px;
+	}
+
+	.b-track__item.duration_60 {
+			height: 480px;
+		}
+
+	.b-track__item.duration_70 {
+		height: 560px;
+	}
+
+		.b-track__item .b-topic {
+			height: 100%;
+		}

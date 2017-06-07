@@ -1,0 +1,35 @@
+.b-list.mod_mainmenu .b-list__item {
+	padding: 15px 20px;
+}
+
+/*.b-list.mod_mainmenu .b-list__item:hover {
+	background-color: rgba(255, 162, 66, 0.2);
+}*/
+
+.b-list.mod_mainmenu {
+	justify-content: center;
+}
+
+.b-list.mod_mainmenu .b-list__item a {
+	text-decoration: none;
+}
+
+.b-list.mod_mainmenu .b-list__item a:hover {
+	text-decoration: underline;
+}
+
+@media (max-width: 980px) {
+	.b-list.mod_mainmenu .b-list__item {
+		padding: 10px 20px;
+	}
+}
+
+@media (max-width: 390px) {
+	.b-list.mod_mainmenu .b-list__item {
+		padding: 10px 10px;
+	}
+
+	.b-list.mod_mainmenu .b-list__item .b-font.size_18 {
+		font-size: 1rem;
+	}
+}

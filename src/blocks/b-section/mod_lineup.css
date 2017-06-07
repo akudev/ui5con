@@ -1,0 +1,13 @@
+/* mod_lineup */
+.b-section.mod_lineup {
+    margin-top: 90px;
+    padding: 70px 0;
+    background-color: #19181e;
+}
+
+
+@media (max-width: 550px) {
+    .b-section.mod_lineup {
+        padding: 40px 0;
+    }
+}

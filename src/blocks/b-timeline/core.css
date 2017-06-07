@@ -1,0 +1,27 @@
+.b-timeline {
+	width: 10%;
+}
+
+.b-timeline__header {
+	height: 40px;
+	text-align: end;
+	text-transform: uppercase;
+}
+
+.b-timeline__item {
+	height: 240px;
+	text-align: end;
+
+}
+
+@media (min-width: 1360px) {
+	.b-section-h {
+		width: 1360px;
+		margin: 0 auto;
+	}
+}
+
+.b-section-h.mod_tracks {
+	display: flex;
+	flex-direction: row;
+}

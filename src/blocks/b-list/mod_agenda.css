@@ -1,30 +1,26 @@
 .b-list.mod_agenda {
-    justify-content: flex-start;
-    }
-    .b-list.mod_agenda .b-list__item {
-        width: 20%;
-        }
-
-@media (max-width: 1210px) {
-    .b-list.mod_agenda .b-list__item {
-        width: 25%;
-    }
+	justify-content: center;
 }
 
-@media (max-width: 980px) {
-    .b-list.mod_agenda .b-list__item {
-        width: 33.33%;
-    }
+.b-list.mod_agenda  .b-list__item {
+	text-transform: uppercase;
 }
 
-@media (max-width: 700px) {
-    .b-list.mod_agenda .b-list__item {
-        width: 50%;
-    }
+.b-list__button {
+	padding: 10px 0;
+	background-color: #19181e;
+	border: 1px solid gray;
+	width: 140px;
+	text-transform: uppercase;
 }
 
-@media (max-width: 550px) {
-    .b-list.mod_agenda .b-list__item {
-        width: 100%;
-    }
+.b-list__button:hover {
+	color: #ffa242;
+	background-color:  rgba(255, 162, 66, 0.2);
 }
+
+.b-list__button:target {
+	color: #ffa242;
+	border: 1px solid gray;
+}
+

@@ -20,6 +20,9 @@
     margin-bottom: 10px;
     }
 
+.b-ui.margin_5 {
+    margin-bottom: 5px;
+}
 
 .b-ui.align_center {
     text-align: center;

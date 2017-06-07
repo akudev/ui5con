@@ -1,4 +1,5 @@
 require('file-loader?name=[name].[ext]!./index.html');
+require('file-loader?name=[name].[ext]!./agenda.html');
 var markerImg = require('./blocks/b-direction/marker.png');
 
 // MAP
@@ -30,6 +31,21 @@ window.initMap = function () {
         icon: markerImg
     });
 };
+
+window.onscroll = function() {
+	if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+		document.getElementById("navTopButton").style.display = "block";
+	} else {
+		document.getElementById("navTopButton").style.display = "none";
+	}
+};
+
+// When the user clicks on the button, scroll to the top of the document
+window.scrollToTop = function() {
+	document.body.scrollTop = 0;
+	document.documentElement.scrollTop = 0;
+};
+
 
 //Google Analytics
 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
