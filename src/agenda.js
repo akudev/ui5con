@@ -1,34 +1,126 @@
-var oAgenda = require('./data/tracks.json');
+var oTracks = require('./data/tracks.json');
+var oBooths = require('./data/booths.json');
 
 var MINUTE_HEIGHT = 1; //px
+
+var TRACKS_HASH = "tracks";
+var BOOTHS_HASH = "showfloor";
+var SPEAKERS_HASH = "speakers";
 
 // init sessions start time
 var oInitialDate = new Date();
 oInitialDate.setHours(9);
 oInitialDate.setMinutes(30);
 
+var bTracksLoaded = false;
+var bBoothLoaded = false;
+var bSpeakersLoaded = false;
+
 var oStartDate;
 
-function fillAgenda() {
-	fillTimeLine();
-	fillTracks();
+$(document).ready(function() {
+
+	var sHash = updateHash();
+	updateUI(sHash);
+});
+
+$(window).bind( "hashchange", function() {
+	var sHash = updateHash();
+	updateUI(sHash);
+});
+
+window.switchAgenda = function(sHash) {
+	var oScrollState = $('html,body').scrollTop();
+	window.location.hash = sHash;
+	//window.location.reload(true);
+	$('html,body').scrollTop(oScrollState);
+};
+
+function updateHash() {
+	var sHash = window.location.hash.split("#")[1];
+	sHash = _verifyHash(sHash);
+
+	// if no hash defined - set #tracks as default.
+	if(!sHash) {
+		sHash = TRACKS_HASH;
+
+		// prevent scrolling
+		var oScrollState = $('html,body').scrollTop();
+		window.location.hash = sHash;
+		$('html,body').scrollTop(oScrollState);
+		//window.location.reload(true);
+	}
+	return sHash;
 }
 
-function fillTimeLine() {
+function updateUI(sHash) {
+	showTracks(sHash);
+	showBooths(sHash);
+	showSpeakers(sHash);
+}
+
+function showTracks(sHash) {
+	if(sHash == TRACKS_HASH) {
+		$("#tracksSection").show();
+		fillTracksInfo();
+	}
+	else {
+		$("#tracksSection").hide();
+	}
+}
+
+function showBooths(sHash) {
+	if(sHash == BOOTHS_HASH) {
+		$("#boothsSection").show();
+		fillBoothsInfo();
+	}
+	else {
+		$("#boothsSection").hide();
+	}
+}
+
+function showSpeakers(sHash) {
+	if(sHash == SPEAKERS_HASH) {
+		$("#speakersSection").show();
+		//fillAgenda();
+	}
+	else {
+		$("#speakersSection").hide();
+	}
+}
+
+
+function fillTracksInfo() {
+	if( !bTracksLoaded ) {
+		fillTimeLine("timeLine-tracks");
+		fillTracks(oTracks);
+	}
+	bTracksLoaded = true;
+}
+
+function fillBoothsInfo() {
+	if( !bBoothLoaded ) {
+		fillTimeLine("timeLine-booths");
+		fillTracks(oBooths);
+	}
+	bBoothLoaded = true;
+}
+
+function fillTimeLine(sTimeLineId) {
 	var oDate = oInitialDate;
 
 	var sTemplate = $("#timeline-item-template").html();
 
 	for (var i = 1; i < 20; i++) {
 		var $content = sTemplate.replace("{{value}}", oDate.toTimeString().substring(0,5));
-		$("#timeLine").append($content);
+		$("#" + sTimeLineId).append($content);
 		oDate = _addMinutes(oDate, 30);
 	}
 }
 
-function fillTracks() {
+function fillTracks(oTracks) {
 	var oDate = oInitialDate;
-	$.each(oAgenda, function(sTrackIndex, oTrack){
+	$.each(oTracks, function(sTrackIndex, oTrack){
 		oStartDate = oInitialDate;
 		var oTrackElement = $("#" + sTrackIndex);
 
@@ -80,4 +172,12 @@ function _getTimeSpanAsString( oDateStart, oDateEnd) {
 	return oDateStart.toTimeString().substring(0,5) + " - " + oDateEnd.toTimeString().substring(0,5);
 }
 
-fillAgenda();
+function _verifyHash(sHash) {
+	if(sHash) {
+		sHash = sHash.toLowerCase();
+		if((sHash == TRACKS_HASH || sHash == BOOTHS_HASH || sHash == SPEAKERS_HASH)){
+			return sHash;
+		}
+	}
+	return null;
+}
