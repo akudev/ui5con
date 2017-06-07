@@ -21,14 +21,17 @@ var oStartDate;
 $(document).ready(function() {
 
 	var sHash = updateHash();
-	updateUI(sHash);
+	updatePage(sHash);
 });
 
 $(window).bind( "hashchange", function() {
 	var sHash = updateHash();
-	updateUI(sHash);
+	updatePage(sHash);
 });
 
+/*
+ * Switch between tracks/booths agenda and speakers views
+ */
 window.switchAgenda = function(sHash) {
 	var oScrollState = $('html,body').scrollTop();
 	window.location.hash = sHash;
@@ -36,6 +39,10 @@ window.switchAgenda = function(sHash) {
 	$('html,body').scrollTop(oScrollState);
 };
 
+/*
+ * Ensures the hash is valid and updates it.
+ * Default hash value - 'tracks'
+ */
 function updateHash() {
 	var sHash = window.location.hash.split("#")[1];
 	sHash = _verifyHash(sHash);
@@ -53,13 +60,20 @@ function updateHash() {
 	return sHash;
 }
 
-function updateUI(sHash) {
-	showTracks(sHash);
-	showBooths(sHash);
-	showSpeakers(sHash);
+/*
+ * Updates page layout according to the actual hash.
+ * The respective view becomes visible, other - hidden.
+ */
+function updatePage(sHash) {
+	updateTracksView(sHash);
+	updateBoothsView(sHash);
+	updateSpeakersView(sHash);
 }
 
-function showTracks(sHash) {
+/*
+ * Updates visibility of the tracks view, loads its content if necessary.
+ */
+function updateTracksView(sHash) {
 	if(sHash == TRACKS_HASH) {
 		$("#tracksSection").show();
 		fillTracksInfo();
@@ -69,7 +83,10 @@ function showTracks(sHash) {
 	}
 }
 
-function showBooths(sHash) {
+/*
+ * Updates visibility of the booths view, loads its content if necessary.
+ */
+function updateBoothsView(sHash) {
 	if(sHash == BOOTHS_HASH) {
 		$("#boothsSection").show();
 		fillBoothsInfo();
@@ -79,7 +96,10 @@ function showBooths(sHash) {
 	}
 }
 
-function showSpeakers(sHash) {
+/*
+ * Updates visibility of the speakers view, loads its content if necessary.
+ */
+function updateSpeakersView(sHash) {
 	if(sHash == SPEAKERS_HASH) {
 		$("#speakersSection").show();
 		//fillAgenda();
