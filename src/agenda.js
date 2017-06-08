@@ -26,6 +26,13 @@ $(document).ready(function() {
 
 	var sHash = getUrlParameter(VIEW_PARAMETER) || TRACKS_HASH;//updateHash();
 	updatePage(sHash);
+
+	// close popup on escape key
+	$(document).keyup(function(e){
+		if(e.which === 27) {
+			closePopup();
+		}
+	});
 });
 
 $(window).bind( "hashchange", function() {
