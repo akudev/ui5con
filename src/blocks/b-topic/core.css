@@ -31,28 +31,31 @@
         content: '';
         transition: all 0.25s ease-out;
         }
-        .b-topic:hover:before {
-            top: -3px;
-            left: -3px;
-            right: -3px;
-            bottom: -3px;
-            border-color: #525257;
-            }
-    .b-topic.mod_more {
-        text-align: center;
-        color: #ffa242;
-        padding-top: 68px;
-        }
-        .b-topic.mod_more:before {
-            border-color: #ffa242;
-            }
-        .b-topic.mod_more:hover:before {
-            border-color: #ffa242;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            }
+.b-topic:hover:before {
+    top: -3px;
+    left: -3px;
+    right: -3px;
+    bottom: -3px;
+    border-color: #525257;
+}
+
+.b-topic.mod_more {
+    text-align: center;
+    color: #ffa242;
+    padding-top: 68px;
+}
+
+.b-topic.mod_more:before {
+    border-color: #ffa242;
+}
+
+.b-topic.mod_more:hover:before {
+    border-color: #ffa242;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
 
 @media (max-width: 550px) {
     .b-topic {

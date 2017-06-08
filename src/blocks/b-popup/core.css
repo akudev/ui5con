@@ -1,0 +1,27 @@
+.b-popup__hidden {
+    display: none;
+}
+
+.b-popup {
+    z-index: 1000;
+    width: 800px;
+}
+
+.b-popup__content {
+    background-color: #000;
+    border: 1px solid gray;
+    padding: 15px;
+}
+
+.b-popup__overlay {
+    opacity:0.6;
+    background-color: #000;
+    display:none;
+    position:absolute;
+    top:0px;
+    left: 0px;
+    height:100%;
+    width:100%;
+    margin: 0px;
+    z-index:100;
+}

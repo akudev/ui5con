@@ -240,6 +240,7 @@ function _createTopicContent(oTopic) {
 			? $("#track-item-template-20").html()
 			: $("#track-item-template").html() ;
 		sTemplate = sTemplate
+			.replace("{{id}}", oTopic.speaker + "@@||@@" + oTopic.title)
 			.replace("{{speaker}}", oTopic.speaker)
 			.replace("{{type}}", oTopic.type);
 	}
@@ -309,3 +310,52 @@ function _verifyHash(sHash) {
 	}
 	return null;
 }
+
+/** popup functions **/
+$ = jQuery;
+
+window.showPopup = function (sId) {
+	var aSegments = sId.split("@@||@@");
+	var oDetailTopic = null;
+	$.each(oTracks, function(sTrackIndex, oTrack) {
+		$.each(oTrack, function (sTopicIndex, oTopic) {
+			if (oTopic.speaker === aSegments[0] && oTopic.title === aSegments[1]) {
+				oDetailTopic = oTopic;
+			}
+		});
+	});
+
+	if (!oDetailTopic) {
+		return;
+	}
+
+	var sTemplate = $("#session-detail-template").html();
+	sTemplate = sTemplate.replace("{{title}}", oDetailTopic.title)
+		.replace("{{speaker}}", oDetailTopic.speaker);
+
+	openPopup(sTemplate);
+};
+
+function openPopup(sContent) {
+	$('#popupBlocklayer').fadeIn('slow');
+
+	var $popup = $('#popup');
+	$popup.html(sContent);
+	$('#popup').removeClass("b-popup__hidden");
+
+	//center popup
+	var top = document.documentElement.scrollTop;
+	var popupWidth = $popup.width();
+	var popupHeight = $popup.height();
+	$popup.css({
+		position: 'absolute',
+		top: $("body").scrollTop() + $(window).height()/2 - popupHeight/2,
+		left: $(window).width()/2 - Math.min(800, popupWidth)/2,
+	});
+	$('#popupBlocklayer').css("top", ($("body").scrollTop()));
+}
+
+window.closePopup = function () {
+	$('#popup').addClass("b-popup__hidden");
+	$('#popupBlocklayer').fadeOut('slow');
+};
