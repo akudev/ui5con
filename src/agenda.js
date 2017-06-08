@@ -33,6 +33,8 @@ $(document).ready(function() {
 			closePopup();
 		}
 	});
+	// close popup on block layer click
+	$('#popupBlocklayer').click(closePopup);
 });
 
 $(window).bind( "hashchange", function() {
