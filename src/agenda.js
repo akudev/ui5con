@@ -4,6 +4,7 @@ var oSpeakers = require('./data/speakers.json');
 
 var MINUTE_HEIGHT = 1; //px
 
+var VIEW_PARAMETER = "view";
 var TRACKS_HASH = "tracks";
 var BOOTHS_HASH = "showfloor";
 var SPEAKERS_HASH = "speakers";
@@ -18,19 +19,19 @@ var bBoothLoaded = false;
 var bSpeakersLoaded = false;
 
 var oStartDate;
+var sCurrentMode = TRACKS_HASH;
+
 
 $(document).ready(function() {
 
-	var sHash = updateHash();
+	var sHash = getUrlParameter(VIEW_PARAMETER) || TRACKS_HASH;//updateHash();
 	updatePage(sHash);
 });
 
 $(window).bind( "hashchange", function() {
-	var sHash = updateHash();
-	updatePage(sHash);
+//	var sHash = updateHash();
+//	updatePage(sHash);
 });
-
-var sCurrentMode = TRACKS_HASH;
 
 /*
  * Switch between tracks/booths agenda and speakers views
@@ -253,6 +254,21 @@ function _createTopicContent(oTopic) {
 
 	return sTemplate;
 }
+
+function getUrlParameter(sParam) {
+	var sPageURL = decodeURIComponent(window.location.search.substring(1)),
+		sURLVariables = sPageURL.split('&'),
+		sParameterName,
+		i;
+
+	for (i = 0; i < sURLVariables.length; i++) {
+		sParameterName = sURLVariables[i].split('=');
+
+		if (sParameterName[0] === sParam) {
+			return sParameterName[1] === undefined ? true : sParameterName[1];
+		}
+	}
+};
 
 function _addMinutes(date, minutes) {
 	return  new Date(date.getTime() + minutes*60000);
