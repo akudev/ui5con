@@ -327,7 +327,9 @@ window.showPopup = function (sId) {
 	var aSegments = sId.split("@@||@@");
 	var oDetailTopic = null;
 	var oDate = oInitialDate;
-	$.each(oTracks, function(sTrackIndex, aTopics) {
+	var oAllTracks = Object.assign(oTracks, oBooths);
+
+	$.each(oAllTracks, function(sTrackIndex, aTopics) {
 		if (!oDetailTopic) {
 			oDate = oInitialDate;
 		} else {
