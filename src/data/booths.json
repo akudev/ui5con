@@ -1,14 +1,22 @@
 {
 	"booth1": [
 		{
-			"title": " Welcome",
-			"speaker": "Frederic Berg",
-			"type": "Session",
-			"duration": 20
+			"type": "break",
+			"duration": 70
 		},
 		{
-			"title": "UI5 News",
-			"speaker": "Stefan Beck",
+			"title": "Metadata-Driven Controls with Rest Services",
+			"speaker": "Martin Schaus",
+			"type": "Session",
+			"duration": 40
+		},
+		{
+			"type": "break",
+			"duration": 10
+		},
+		{
+			"title": "New Demo Kit - Your Way to UI5",
+			"speaker": "Petya Begovska",
 			"type": "session",
 			"duration": 40
 		},
@@ -17,10 +25,64 @@
 			"duration": 10
 		},
 		{
-			"title": "UI5 Evolution – increase performance, fix architectural gaps, embrace technologies",
-			"speaker": "Peter Muessig, Andreas Ecker",
+			"title": "Adapting UI @ Runtime",
+			"speaker": "Mikhail Benderskiy, Christian Voshage",
 			"type": "session",
 			"duration": 40
+		},
+		{
+			"type": "break",
+			"duration": 60
+		},
+		{
+			"title": "SEO for OpenUI5 Apps",
+			"speaker": "Yavor Ivanov, Stanislava Baltova",
+			"type": "session",
+			"duration": 40
+		},
+		{
+			"type": "break",
+			"duration": 10
+		},
+		{
+			"title": "Components – More Performance!",
+			"speaker": "Peter Muessig, Matthias Osswal",
+			"type": "session",
+			"duration": 40
+		},
+		{
+			"type": "break",
+			"duration": 10
+		},
+		{
+			"title": "Create your own UI5 controls – what’s coming up",
+			"speaker": "Andreas Kunz",
+			"type": "session",
+			"duration": 40
+		},
+		{
+			"type": "break",
+			"duration": 10
+		},
+		{
+			"title": "Time or Money? Time (DateFormat) and Money (NumberFormat)!",
+			"speaker": "Jiawei Cao, Malte Wedel",
+			"type": "session",
+			"duration": 40
+		},
+		{
+			"type": "break",
+			"duration": 10
+		},
+		{
+			"title": "Effortless OPA testing with Gherkin Reusable Specs",
+			"speaker": "Savio Dimatteo",
+			"type": "session",
+			"duration": 40
+		},
+		{
+			"type": "break",
+			"duration": 20
 		}
 	],
 	"booth2": [
@@ -29,20 +91,136 @@
 			"duration": 70
 		},
 		{
-			"title": " Open-sourcing Offline UI5 apps",
-			"speaker": " Tom Van Doorslaer",
+			"title": "Behavior-Driven Development with OPA5 automated tests",
+			"speaker": "Andras Gabor Konya, Lorant Guth",
 			"type": "session",
 			"duration": 40
+		},
+		{
+			"type": "break",
+			"duration": 10
+		},
+		{
+			"title": "The OpenUI5 Developer Blog - Behind the Scenes",
+			"speaker": "Holger Schäfer",
+			"type": "session",
+			"duration": 40
+		},
+		{
+			"type": "break",
+			"duration": 10
+		},
+		{
+			"title": "Advanced Charting Controls Coming to UI5",
+			"speaker": "Ondrej Bohaciak, Vaclav Vopenka",
+			"type": "session",
+			"duration": 40
+		},
+		{
+			"type": "break",
+			"duration": 60
+		},
+		{
+			"title": "Virtual Tour around a Company Site with UI5",
+			"speaker": "Helmut Tammen",
+			"type": "session",
+			"duration": 40
+		},
+		{
+			"type": "break",
+			"duration": 10
+		},
+		{
+			"title": "Easy integrations with UI5",
+			"speaker": "Meredith Hassett",
+			"type": "session",
+			"duration": 40
+		},
+		{
+			"type": "break",
+			"duration": 10
+		},
+		{
+			"title": "Code-free Fiori Apps with SAP Web IDE RAD and Layout Editor",
+			"speaker": "Vered Constantin",
+			"type": "session",
+			"duration": 40
+		},
+		{
+			"type": "break",
+			"duration": 10
+		},
+		{
+			"title": "Drafts: Extending Two-Way Binding to Provide an Editing Concept",
+			"speaker": "Ian Robert Taylor, Dirk Teufel",
+			"type": "session",
+			"duration": 40
+		},
+		{
+			"type": "break",
+			"duration": 10
+		},
+		{
+			"title": "A hitchhiker‘s guide to the UI5 demo apps & tutorials",
+			"speaker": "Elena Makarenko",
+			"type": "session",
+			"duration": 40
+		},
+		{
+			"type": "break",
+			"duration": 20
 		}
 	],
 	"booth3": [
 		{
 			"type": "break",
-			"duration": 70
+			"duration": 30
 		},
 		{
-			"title": "Write reliable application tests for your SAP UI5 application",
-			"speaker": " Maxim Naidenov",
+			"title": "UI5 Controls for Document Handling",
+			"speaker": "Pia Kinkel, Christoph Laux",
+			"type": "session",
+			"duration": 60
+		},
+		{
+			"title": "Embedded Analytics with Charts",
+			"speaker": "Pia Kinkel, Christoph Laux, Bohdan Pukalskyi",
+			"type": "session",
+			"duration": 60
+		},
+		{
+			"title": "Developer Clinic: UI5 Controls",
+			"speaker": "Pia Kinkel, Bohdan Pukalskyi, Dominic Holzwarth",
+			"type": "session",
+			"duration": 60
+		},
+		{
+			"title": "How to Build an Ice Cream Machine with UI5 Controls",
+			"speaker": "Christoph Laux, Bohdan Pukalskyi",
+			"type": "session",
+			"duration": 60
+		},
+		{
+			"title": "Tiles in UI5",
+			"speaker": "Christoph Laux, Bohdan Pukalskyi",
+			"type": "session",
+			"duration": 60
+		},
+		{
+			"title": "Smart Micro Charts",
+			"speaker": " Bohdan Pukalskyi, Dominic Holzwarth",
+			"type": "session",
+			"duration": 60
+		},
+		{
+			"title": "Embedded Analytics with Charts",
+			"speaker": "Pia Kinkel, Christoph Laux, Bohdan Pukalskyi",
+			"type": "session",
+			"duration": 60
+		},
+		{
+			"title": "Integrate Feed Capabilities Using UI5 Controls",
+			"speaker": "Christoph Laux",
 			"type": "session",
 			"duration": 60
 		}
