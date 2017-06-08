@@ -1,7 +1,7 @@
 {
 	"track1": [
 		{
-			"title": " Welcome",
+			"title": "Opening",
 			"speaker": "Frederic Berg",
 			"type": "Session",
 			"duration": 20
@@ -10,7 +10,7 @@
 			"title": "UI5 News",
 			"speaker": "Stefan Beck",
 			"type": "session",
-			"duration": 40
+			"duration": 30
 		},
 		{
 			"type": "break",
@@ -57,8 +57,8 @@
 			"duration": 10
 		},
 		{
-			"title": "Building a companion conversational UI for a Fiori App",
-			"speaker": "Gregor Brett",
+			"title": "UI5Lab - Collaborators Wanted for a community-driven repository",
+			"speaker": "Michael Graf, Emanuele Ricci",
 			"type": "session",
 			"duration": 20
 		},
@@ -67,7 +67,7 @@
 			"duration": 10
 		},
 		{
-			"title": " Mixed Reality with OpenUI5",
+			"title": "Mixed Reality with OpenUI5",
 			"speaker": "Dmitriy Buslov",
 			"type": "session",
 			"duration": 20
@@ -77,8 +77,8 @@
 			"duration": 10
 		},
 		{
-			"title": "UI5Lab - Collaborators Wanted for a community-driven repository",
-			"speaker": "Michael Graf, Emanuele Ricci",
+			"title": "Building a companion conversational UI for a Fiori App",
+			"speaker": "Gregor Brett",
 			"type": "session",
 			"duration": 20
 		},
@@ -97,7 +97,7 @@
 			"duration": 10
 		},
 		{
-			"title": "Continuous Integration: Build process & automated testing of UI5 Apps",
+			"title": "CI: Build process & automated testing of UI5 Apps",
 			"speaker": "Matthias Oßwald, Merlin Beutlberger",
 			"type": "session",
 			"duration": 40
@@ -107,8 +107,8 @@
 			"duration": 10
 		},
 		{
-			"title": "experiments with real-time Image processing and Augmented Reality in UI5",
-			"speaker": " Volker Buzek",
+			"title": "Real-time Image Processing & Augmented Reality",
+			"speaker": "Volker Buzek",
 			"type": "session",
 			"duration": 20
 		},
@@ -130,8 +130,20 @@
 	],
 	"track2": [
 		{
+			"title": " Opening (Broadcast)",
+			"speaker": "Frederic Berg",
+			"type": "session",
+			"duration": 20
+		},
+		{
+			"title": " UI5News (Broadcast)",
+			"speaker": "Stefan Beck",
+			"type": "session",
+			"duration": 30
+		},
+		{
 			"type": "break",
-			"duration": 70
+			"duration": 10
 		},
 		{
 			"title": " Open-sourcing Offline UI5 apps",
@@ -154,8 +166,8 @@
 			"duration": 10
 		},
 		{
-			"title": "UI5 Theming explained",
-			"speaker": " Matthias Oßwald",
+			"title": "Developing Custom ESLint Rules",
+			"speaker": "Alexander Flammer",
 			"type": "session",
 			"duration": 20
 		},
@@ -214,8 +226,8 @@
 			"duration": 10
 		},
 		{
-			"title": "Why you should keep an eye on SAPUI5 Flexibility",
-			"speaker": "Alexander Rauh",
+			"title": "Keep an eye on SAPUI5 Flexibility",
+			"speaker": "Alexander Rauh, Sebastian Wennemers",
 			"type": "session",
 			"duration": 40
 		},
@@ -234,7 +246,7 @@
 			"duration": 10
 		},
 		{
-			"title": "Developing Custom ESLint Rules ",
+			"title": "UI5 Theming explained",
 			"speaker": "Alexander Flammer",
 			"type": "session",
 			"duration": 20
@@ -270,7 +282,7 @@
 			"duration": 50
 		},
 		{
-			"title": "Introduce functional programming techniques to your UI5 app codebase!",
+			"title": "Functional Programming for your UI5 App",
 			"speaker": "DJ Adams",
 			"type": "session",
 			"duration": 60
@@ -278,7 +290,8 @@
 		{
 			"type": "break",
 			"duration": 10
-		},		{
+		},
+		{
 			"title": "FLP meets SAPUI5 – extending the Fiori Launchpad",
 			"speaker": "Thilo Seidel",
 			"type": "session",
@@ -287,7 +300,8 @@
 		{
 			"type": "break",
 			"duration": 10
-		},		{
+		},
+		{
 			"title": "Fiori 2.0 for Your Application",
 			"speaker": "Stanislava Baltova, Yavor Ivanov",
 			"type": "session",
@@ -296,15 +310,12 @@
 		{
 			"type": "break",
 			"duration": 10
-		},		{
+		},
+		{
 			"title": "Getting started with UI5 on Cloud Foundry",
 			"speaker": "Frederic Berg",
 			"type": "session",
 			"duration": 60
-		},
-		{
-			"type": "break",
-			"duration": 10
 		}
 	]
 }
