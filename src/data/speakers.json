@@ -1,6 +1,30 @@
-{
-	"speaker1": {
-		"speaker": "Frederic Berg",
-		"about": "bla-bla-bla------"
+[
+	{
+		"name": "Yavor Ivanov",
+		"bio": "bla-bla-bla------",
+		"picture": "yavor.ivanov.jpg"
+	},
+	{
+		"name": "Andreas Kunz",
+		"bio": "bla-bla-bla------",
+		"picture": "Andreas-openSAP-small.jpg"
+	},
+	{
+		"name": "Andreas Kunz 1",
+		"bio": "bla-bla-bla------",
+		"picture": "Andreas-openSAP-small.jpg"
+	},	{
+		"name": "Andreas Kunz 3",
+		"bio": "bla-bla-bla------",
+		"picture": "Andreas-openSAP-small.jpg"
+	},	{
+		"name": "Andreas Kunz 2",
+		"bio": "bla-bla-bla------",
+		"picture": "Andreas-openSAP-small.jpg"
+	},
+	{
+		"name": "Thilo Seidel",
+		"bio": "bla-bla-bla------",
+		"picture": "ThiloSeidel2016.jpg"
 	}
-}
+]

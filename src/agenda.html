@@ -20,21 +20,19 @@
 		<div class="b-bar"></div>
 		<div class="b-section">
 			<div class="b-list mod_mainmenu">
-				<div class="b-list mod_mainmenu">
-					<div class="b-list__item">
-						<div class="b-font size_18 color_yellow">
-							<a href="index.html">INFO</a>
-						</div>
+				<div class="b-list__item">
+					<div class="b-font size_18 color_yellow">
+						<a href="index.html">INFO</a>
 					</div>
-					<div class="b-list__item">
-						<div class="b-font size_18 color_yellow">
-							<a href="index.html#section-what-where">WHAT & WHERE?</a>
-						</div>
+				</div>
+				<div class="b-list__item">
+					<div class="b-font size_18 color_yellow">
+						<a href="index.html#section-what-where">WHAT & WHERE?</a>
 					</div>
-					<div class="b-list__item">
-						<div class="b-font size_18 color_yellow">
-							<a href="agenda.html#tracks">AGENDA</a>
-						</div>
+				</div>
+				<div class="b-list__item">
+					<div class="b-font size_18 color_yellow">
+						<a href="agenda.html#tracks">AGENDA</a>
 					</div>
 				</div>
 			</div>
@@ -44,67 +42,99 @@
 		<div class="b-header__delimiter"></div>
 		<div class="b-ui align_center">
 			<div class="b-font size_36 color_yellow weight_light">AGENDA 2017</div>
-					</div>
+		</div>
 		<div class="b-header__footer">
 
 			<div class="b-section">
 				<div class="b-section-h">
 					<div class="b-list mod_agenda">
 						<div class="b-list__item">
-							<button class="b-list__button b-font size_18 color_red" title="Tracks" id="tracks" onclick="switchAgenda('tracks');">Tracks</button>
+							<button class="b-list__button b-font size_18 color_red" title="Tracks" id="tracks"
+									onclick="switchAgenda('tracks');">Tracks
+							</button>
 						</div>
 						<div class="b-list__item">
-							<button class="b-list__button b-font size_18 color_red" title="Booths" id="showfloor" onclick="switchAgenda('showfloor');">Showfloor</button>
+							<button class="b-list__button b-font size_18 color_red" title="Booths" id="showfloor"
+									onclick="switchAgenda('showfloor');">Showfloor
+							</button>
 						</div>
 						<div class="b-list__item">
-							<button class="b-list__button b-font size_18 color_red" title="Speakers" id="speakers" onclick="switchAgenda('speakers');">Speakers</button>
+							<button class="b-list__button b-font size_18 color_red" title="Speakers" id="speakers"
+									onclick="switchAgenda('speakers');">Speakers
+							</button>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-	<div class="b-section mod_agenda">
-		<script id="timeline-item-template" type="text/template">
-			<div class="b-timeline__item b-font size_15 color_red">
-				{{value}}
-			</div>
-		</script>
-		<script id="track-item-template" type="text/template">
-			<div class="b-track__item duration_{{duration}}">
-				<div class="b-topic">
-					<div class="b-topic__title b-font size_15 color_white b-ui margin_20">
-						{{title}}
-					</div>
-					<div class="b-font size_13 color_gray">{{speaker}}</div>
-					<div class="b-topic__time b-font size_13 color_white">{{time}}</div>
-					<div class="b-topic__format b-font size_13 color_gray">{{type}}</div>
+	<script id="timeline-item-template" type="text/template">
+		<div class="b-timeline__item b-font size_15 color_red">
+			{{value}}
+		</div>
+	</script>
+	<script id="track-item-template" type="text/template">
+		<div class="b-track__item duration_{{duration}}">
+			<div class="b-topic">
+				<div class="b-topic__title b-font size_15 color_white b-ui margin_20">
+					{{title}}
 				</div>
+				<div class="b-font size_13 color_gray">{{speaker}}</div>
+				<div class="b-topic__time b-font size_13 color_white">{{time}}</div>
+				<div class="b-topic__format b-font size_13 color_gray">{{type}}</div>
 			</div>
-		</script>
-		<script id="track-item-template-20" type="text/template">
-			<div class="b-track__item duration_20">
-				<div class="b-topic">
-					<div class="b-topic__title b-font size_15 color_white b-ui margin_5">
-						{{title}}
-					</div>
-					<div class="b-font size_13 color_gray">{{speaker}}</div>
-					<div class="b-topic__time b-font size_13 color_white">{{time}}</div>
-					<div class="b-topic__format b-font size_13 color_gray">{{type}}</div>
+		</div>
+	</script>
+	<script id="track-item-template-20" type="text/template">
+		<div class="b-track__item duration_20">
+			<div class="b-topic">
+				<div class="b-topic__title b-font size_15 color_white b-ui margin_5">
+					{{title}}
 				</div>
+				<div class="b-font size_13 color_gray">{{speaker}}</div>
+				<div class="b-topic__time b-font size_13 color_white">{{time}}</div>
+				<div class="b-topic__format b-font size_13 color_gray">{{type}}</div>
 			</div>
-		</script>
-		<script id="break-item-template" type="text/template">
-			<div class="b-track__item mod_break duration_{{duration}}">
-				<div class="b-topic mod_break">
-					<div class="b-topic__title b-font size_15 color_white b-ui">
-						{{title}}
-					</div>
-					<!--<div class="b-topic__format b-font size_13 color_gray">{{time}}</div>-->
+		</div>
+	</script>
+	<script id="break-item-template" type="text/template">
+		<div class="b-track__item mod_break duration_{{duration}}">
+			<div class="b-topic mod_break">
+				<div class="b-topic__title b-font size_15 color_white b-ui">
+					{{title}}
 				</div>
+				<!--<div class="b-topic__format b-font size_13 color_gray">{{time}}</div>-->
 			</div>
-		</script>
-		<div class="b-section-h mod_tracks" id="tracksSection" style="display: none;">
+		</div>
+	</script>
+	<script id="nav-letter-item-template" type="text/template">
+		<div class="b-list__item">
+			<div class="b-font size_18 color_yellow">
+				<a href="#letter_{{letter}}">{{letter}}</a>
+			</div>
+		</div>
+	</script>
+	<script id="speakers-section-item-template" type="text/template">
+		<div class="b-section-h mod_tracks" id="speakersSection_{{letter}}">
+			<div id="letter_{{letter}}" class="b-timeline">
+			</div>
+			<div class="b-track" id="speakersBlock_{{letter}}">
+			<!-- speakers with customised track template -->
+			</div>
+			</div>
+	</script>
+	<script id="speaker-item-template" type="text/template">
+		<div class="b-track__item duration_{{duration}}">
+			<div class="b-topic">
+				<div class="b-topic__title b-font size_15 color_white b-ui margin_20">
+					{{name}}
+				</div>
+				<div class="b-font size_13 color_gray">{{bio}}</div>
+			</div>
+		</div>
+	</script>
+	<div class="b-section mod_agenda" id="tracksSection" style="display: none;">
+		<div class="b-section-h mod_tracks">
 			<div id="timeLine-tracks" class="b-timeline">
 				<div class="b-timeline__header b-font size_14 color_red">
 					Time
@@ -126,7 +156,9 @@
 				</div>
 			</div>
 		</div>
-		<div class="b-section-h mod_tracks" id="boothsSection" style="display: none;">
+	</div>
+	<div class="b-section mod_agenda" id="boothsSection" style="display: none;">
+		<div class="b-section-h mod_tracks">
 			<div id="timeLine-booths" class="b-timeline">
 				<div class="b-timeline__header b-font size_14 color_red">
 					Time
@@ -148,11 +180,10 @@
 				</div>
 			</div>
 		</div>
-		<div class="b-section-h mod_tracks" id="speakersSection" style="display: none;">
-			<div id="speaker1" class="b-track">
-				<div class="b-track__header b-font size_15 color_white b-ui">
-					Coming soon...
-				</div>
+	</div>
+	<div class="b-section mod_agenda" id="speakersSection" style="display: none;">
+		<div class="b-section-h">
+			<div class="b-list mod_mainmenu" id="navigationLetters">
 			</div>
 		</div>
 	</div>

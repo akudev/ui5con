@@ -1,5 +1,6 @@
 var oTracks = require('./data/tracks.json');
 var oBooths = require('./data/booths.json');
+var oSpeakers = require('./data/speakers.json');
 
 var MINUTE_HEIGHT = 1; //px
 
@@ -28,6 +29,8 @@ $(window).bind( "hashchange", function() {
 	var sHash = updateHash();
 	updatePage(sHash);
 });
+
+var sCurrentMode = TRACKS_HASH;
 
 /*
  * Switch between tracks/booths agenda and speakers views
@@ -102,7 +105,7 @@ function updateBoothsView(sHash) {
 function updateSpeakersView(sHash) {
 	if(sHash == SPEAKERS_HASH) {
 		$("#speakersSection").show();
-		//fillAgenda();
+		fillSpeakersInfo();
 	}
 	else {
 		$("#speakersSection").hide();
@@ -114,16 +117,23 @@ function fillTracksInfo() {
 	if( !bTracksLoaded ) {
 		fillTimeLine("timeLine-tracks");
 		fillTracks(oTracks);
+		bTracksLoaded = true;
 	}
-	bTracksLoaded = true;
 }
 
 function fillBoothsInfo() {
 	if( !bBoothLoaded ) {
 		fillTimeLine("timeLine-booths");
 		fillTracks(oBooths);
+		bBoothLoaded = true;
 	}
-	bBoothLoaded = true;
+}
+
+function fillSpeakersInfo() {
+	if( !bSpeakersLoaded ) {
+		createSpeakersViewContent();
+		bSpeakersLoaded = true;
+	}
 }
 
 function fillTimeLine(sTimeLineId) {
@@ -149,6 +159,66 @@ function fillTracks(oTracks) {
 			oTrackElement.append($content);
 		} );
 	});
+}
+
+function createSpeakersViewContent() {
+	var oSortedSpeakersInfo = prepareSpeakersInfo();
+
+	var aLetters = Object.keys((oSortedSpeakersInfo));
+
+	// fill navigation letter panel
+	var oNavLettersElement = $("#navigationLetters");
+	var oSpeakersSection = $("#speakersSection");
+	var sNavLetterTemplate =  $("#nav-letter-item-template").html();
+	var sSpeakersSectionTemplate =  $("#speakers-section-item-template").html();
+	var sLetterTemplate = $("#timeline-item-template").html();
+	var sSpeakerTemplate = $("#speaker-item-template").html();
+
+	$.each(oSortedSpeakersInfo, function(sLetter, oSpeakers) {
+		// add the  letter to navigation panel
+		var $content = sNavLetterTemplate.replace(new RegExp("{{letter}}", 'g'), sLetter);
+		oNavLettersElement.append($content);
+
+		// create a new speakers section for the letter
+		var oSpeakersSectionItem = sSpeakersSectionTemplate.replace(new RegExp("{{letter}}", 'g'), sLetter);
+		oSpeakersSection.append(oSpeakersSectionItem);
+
+		// get the letter block element
+		var oLetterBlock = $("#letter_" + sLetter);
+		var oSpeakersBlock = $("#speakersBlock_" + sLetter);
+
+		var oLetterItem = sLetterTemplate.replace("{{value}}", sLetter);
+		oLetterBlock.append(oLetterItem);
+
+		$.each(oSpeakers, function(sTopicIndex, oSpeaker) {
+			var oSpeakerItem = sSpeakerTemplate
+				.replace("{{name}}", oSpeaker.name)
+				.replace("{{bio}}", oSpeaker.bio);
+			oSpeakersBlock.append(oSpeakerItem);
+		} );
+
+	} );
+
+}
+function prepareSpeakersInfo() {
+	oSpeakers = $(oSpeakers).sort(function(oSpeaker1, oSpeaker2) {
+		var sComp1 = oSpeaker1.name.toUpperCase();
+		var sComp2 = oSpeaker2.name.toUpperCase();
+		return sComp1.localeCompare(sComp2);
+	});
+
+	var oSortedSpeakersInfo = {};
+	$.each(oSpeakers, function(oIndex, oSpeaker){
+
+		// Classify a speaker simply by the first letter of his name
+		var sLetter = oSpeaker.name.trim().substring(0, 1);
+		if(!oSortedSpeakersInfo[sLetter]) {
+			oSortedSpeakersInfo[sLetter] = [];
+		}
+		oSortedSpeakersInfo[sLetter].push(oSpeaker);
+	});
+
+	return oSortedSpeakersInfo;
 }
 
 function _createTopicContent(oTopic) {
