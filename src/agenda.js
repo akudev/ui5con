@@ -317,21 +317,35 @@ $ = jQuery;
 window.showPopup = function (sId) {
 	var aSegments = sId.split("@@||@@");
 	var oDetailTopic = null;
-	$.each(oTracks, function(sTrackIndex, oTrack) {
-		$.each(oTrack, function (sTopicIndex, oTopic) {
+	var oDate = oInitialDate;
+	$.each(oTracks, function(sTrackIndex, aTopics) {
+		if (!oDetailTopic) {
+			oDate = oInitialDate;
+		} else {
+			return;
+		}
+		for (var i = 0; i < aTopics.length; i++) {
+			var oTopic = aTopics[i];
 			if (oTopic.speaker === aSegments[0] && oTopic.title === aSegments[1]) {
 				oDetailTopic = oTopic;
+				return;
 			}
-		});
+			oDate = _addMinutes(oDate, oTopic.duration);
+		}
 	});
 
 	if (!oDetailTopic) {
 		return;
 	}
 
+	var oEndDate = _addMinutes(oDate, oDetailTopic.duration);
+	var sTime = _getTimeSpanAsString(oDate, oEndDate);
+
 	var sTemplate = $("#session-detail-template").html();
 	sTemplate = sTemplate.replace("{{title}}", oDetailTopic.title)
-		.replace("{{speaker}}", oDetailTopic.speaker);
+		.replace("{{speaker}}", oDetailTopic.speaker)
+		.replace("{{type}}", oDetailTopic.type)
+		.replace("{{time}}", sTime);
 
 	openPopup(sTemplate);
 };
@@ -350,7 +364,7 @@ function openPopup(sContent) {
 	$popup.css({
 		position: 'absolute',
 		top: $("body").scrollTop() + $(window).height()/2 - popupHeight/2,
-		left: $(window).width()/2 - Math.min(800, popupWidth)/2,
+		left: $(window).width()/2 - Math.min(800, $(window).width())/2,
 	});
 	$('#popupBlocklayer').css("top", ($("body").scrollTop()));
 }

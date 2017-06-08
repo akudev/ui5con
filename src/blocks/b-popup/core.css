@@ -7,10 +7,14 @@
     width: 800px;
 }
 
-.b-popup__content {
+/*.b-popup__content {
     background-color: #000;
     border: 1px solid gray;
     padding: 15px;
+}*/
+
+.b-popup__content > div {
+    background-color: #000;
 }
 
 .b-popup__overlay {

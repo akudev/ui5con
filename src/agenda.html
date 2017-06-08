@@ -79,6 +79,7 @@
 				<div class="b-topic__title b-font size_15 color_white b-ui margin_20">
 					{{title}}
 				</div>
+				<a href="javascript:showPopup('{{id}}');" class="b-topic__detailsLink">Details</a>
 				<div class="b-font size_13 color_gray">{{speaker}}</div>
 				<div class="b-topic__time b-font size_13 color_white">{{time}}</div>
 				<div class="b-topic__format b-font size_13 color_gray">{{type}}</div>
@@ -91,7 +92,7 @@
 				<div class="b-topic__title b-font size_15 color_white b-ui margin_5">
 					{{title}}
 				</div>
-				<a style="z-index:10000;" href="javascript:showPopup('{{id}}');">Details</a>
+				<a href="javascript:showPopup('{{id}}');" class="b-topic__detailsLink">Details</a>
 				<div class="b-font size_13 color_gray">{{speaker}}</div>
 				<div class="b-topic__time b-font size_13 color_white">{{time}}</div>
 				<div class="b-topic__format b-font size_13 color_gray">{{type}}</div>
@@ -141,6 +142,8 @@
 					{{title}}
 				</div>
 				<div class="b-font size_13 color_gray">{{speaker}}</div>
+				<div class="b-topic__time b-font size_13 color_white">{{time}}</div>
+				<div class="b-topic__format b-font size_13 color_gray">{{type}}</div>
 				<a href="javascript: closePopup();">close</a>
 			</div>
 		</div>
