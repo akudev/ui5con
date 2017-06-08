@@ -37,10 +37,11 @@ $(window).bind( "hashchange", function() {
  * Switch between tracks/booths agenda and speakers views
  */
 window.switchAgenda = function(sHash) {
-	var oScrollState = $('html,body').scrollTop();
+	window.location.href = addOrReplaceUrlParameter(VIEW_PARAMETER, sHash)
+/*	var oScrollState = $('html,body').scrollTop();
 	window.location.hash = sHash;
 	//window.location.reload(true);
-	$('html,body').scrollTop(oScrollState);
+	$('html,body').scrollTop(oScrollState);*/
 };
 
 /*
@@ -269,6 +270,27 @@ function getUrlParameter(sParam) {
 		}
 	}
 };
+
+
+function addOrReplaceUrlParameter(sParam, sNewData) {
+	var sStringToAdd = sParam + "=" + sNewData;
+
+	if (window.location.search == "")
+		return window.location.href + sStringToAdd;
+
+	if (window.location.search.indexOf(sParam +'=') == -1)
+		return window.location.href + sStringToAdd;
+
+	var newSearchString = "";
+	var searchParams = window.location.search.substring(1).split("&");
+	for (var i = 0; i < searchParams.length; i++) {
+		if (searchParams[i].indexOf(sParam +'=') > -1) {
+			searchParams[i] = sStringToAdd;
+			break;
+		}
+	}
+	return window.location.href.split("?")[0] + "?" + searchParams.join("&");
+}
 
 function _addMinutes(date, minutes) {
 	return  new Date(date.getTime() + minutes*60000);
