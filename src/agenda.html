@@ -49,21 +49,56 @@
 				<div class="b-section-h">
 					<div class="b-list mod_agenda">
 						<div class="b-list__item">
-							<button class="b-list__button b-font size_18 color_red" title="Tracks" id="tracks"
-									onclick="switchAgenda('tracks');">Tracks
+							<button
+								id="tracks"
+								class="b-list__button b-font size_18 color_red"
+								title="Tracks"
+								onclick="switchAgenda('tracks');">
+								Tracks
 							</button>
 						</div>
 						<div class="b-list__item">
-							<button class="b-list__button b-font size_18 color_red" title="Booths" id="showfloor"
-									onclick="switchAgenda('showfloor');">Showfloor
+							<button
+								id="showfloor"
+								class="b-list__button b-font size_18 color_red"
+								title="Showfloor"
+								onclick="switchAgenda('showfloor');">
+								Showfloor
 							</button>
 						</div>
 						<div class="b-list__item">
-							<button class="b-list__button b-font size_18 color_red" title="Speakers" id="speakers"
-									onclick="switchAgenda('speakers');">Speakers
+							<button
+								id="speakers"
+								class="b-list__button b-font size_18 color_red"
+								title="Speakers"
+								onclick="switchAgenda('speakers');">
+								Speakers
 							</button>
 						</div>
 					</div>
+					<div class="b-list mod_download">
+						<div class="b-list__item">
+							<button
+								id="downloadPDF"
+								class="b-list__button b-font size_18 color_red"
+								title="PDF"
+								onclick="">
+								PDF
+							</button>
+						</div>
+						<div class="b-list__item">
+							<button
+								id="downloadXLSX"
+								class="b-list__button b-font size_18 color_red"
+								title="XLSX"
+								onclick="">
+								XSLT
+							</button>
+						</div>
+					</div>
+				</div>
+				<div>
+
 				</div>
 			</div>
 		</div>
@@ -120,18 +155,45 @@
 		<div class="b-section-h mod_tracks" id="speakersSection_{{letter}}">
 			<div id="letter_{{letter}}" class="b-timeline">
 			</div>
-			<div class="b-track" id="speakersBlock_{{letter}}">
-			<!-- speakers with customised track template -->
+			<div class="b-list mod_speakers" id="speakersBlock_{{letter}}">
+				<!-- speakers with customised track template -->
 			</div>
-			</div>
+		</div>
 	</script>
 	<script id="speaker-item-template" type="text/template">
-		<div class="b-track__item duration_{{duration}}">
-			<div class="b-topic">
-				<div class="b-topic__title b-font size_15 color_white b-ui margin_20">
-					{{name}}
+		<div class="b-list__item">
+			<div class="b-topic mod_speaker">
+				<div class=" mod_speaker">
+					<div class="b-topic__title b-font size_15 color_white b-ui margin_right_10 column_1">
+						{{name}}
+					</div>
+					<div class="b-topic__title mod_splitter b-font size_15 color_gray b-ui margin_right_10">
+						|
+					</div>
+
+					<div class="b-topic__title b-font size_15 color_gray b-ui column_2">
+						{{company}}
+					</div>
+					<div class="b-topic__title b-font size_15 color_gray b-ui column_3">
+						{{session}}
+					</div>
 				</div>
-				<div class="b-font size_13 color_gray">{{bio}}</div>
+				<div class="flex-container b-topic__content mod_speaker">
+					<div class="b-topic__image-column fix-item">
+						<div
+							class="b-topic__picture"
+							style="background-image:url('src/data/pictures/Andreas-openSAP-small.jpg');">
+						</div>
+						<!--<image class="b-topic__picture" src="src/data/pictures/Andreas-openSAP-small.jpg" height="100px" width="100px"/>
+						-->
+						<div class="b-topic__title b-font size_15 color_yellow b-ui">
+							MEET ME AT HH:MM
+						</div>
+					</div>
+					<div class="b-font size_13 color_white b-display flex-item b-ui margin_left_10 overflow_ellipsis"
+						 style="overflow: hidden; text-overflow: ellipsis; ">{{bio}}
+					</div>
+				</div>
 			</div>
 		</div>
 	</script>

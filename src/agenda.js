@@ -45,12 +45,8 @@ $(window).bind( "hashchange", function() {
 /*
  * Switch between tracks/booths agenda and speakers views
  */
-window.switchAgenda = function(sHash) {
-	window.location.href = addOrReplaceUrlParameter(VIEW_PARAMETER, sHash)
-/*	var oScrollState = $('html,body').scrollTop();
-	window.location.hash = sHash;
-	//window.location.reload(true);
-	$('html,body').scrollTop(oScrollState);*/
+window.switchAgenda = function(sViewName) {
+	window.location.href = addOrReplaceUrlParameter(VIEW_PARAMETER, sViewName)
 };
 
 /*

@@ -1,0 +1,13 @@
+.b-list.mod_download {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+.b-list.mod_download .b-list__button {
+	padding: 10px 0;
+	background-color: #19181e;
+	border: 1px solid gray;
+	width: 100px;
+	text-transform: uppercase;
+}

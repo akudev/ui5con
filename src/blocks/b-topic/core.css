@@ -66,12 +66,16 @@
 @media (max-width: 550px) {
     .b-topic {
         height: auto;
-    }
-    .b-topic__title {
-        height: auto;
-    }
-    .b-topic.mod_more {
-        padding-top: 25px;
+        }
+        .b-topic__title {
+            height: auto;
+            }
+        .b-topic.mod_more {
+            padding-top: 25px;
+            }
+
+    .b-topic__title.mod_splitter {
+        display: none;
     }
 }
 

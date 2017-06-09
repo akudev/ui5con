@@ -27,3 +27,14 @@
 .b-ui.align_center {
     text-align: center;
     }
+
+.b-ui.margin_left_10 {
+    margin-left: 10px;
+}
+
+.b-ui.margin_right_10 {
+    margin-right: 10px;
+}
+.b-ui.text-align_left {
+    text-align: end;
+}

@@ -134,12 +134,25 @@ a:hover {
 .flex-container {
     display: -webkit-flex;
     display: flex;
-    -webkit-flex-direction: column;
-    flex-direction: column;
+    -webkit-flex-direction: row;
+    flex-direction: row;
 }
 .flex-item {
-    flex: 1 0 auto;
+    flex: 0 1 auto;
 }
+
+.fix-item {
+    flex: 0 0 auto;
+}
+.float-left {
+    float: left;
+}
+@media (max-width: 700px) {
+    .flex-container.mod_speaker {
+       display: block;
+    }
+}
+
 .collapsed {
     height: 1000px;
     overflow: hidden;
@@ -212,4 +225,11 @@ a:hover {
 
 .b-floatButton:hover {
     background-color: #ffa242;
+}
+
+.b-display {
+}
+
+.b-display.inline_block {
+    display: inline-block;
 }
