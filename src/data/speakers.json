@@ -22,7 +22,9 @@
 	{
 		"name": "Thilo Seidel",
 		"bio": "I have been a web developer for several years now, turned into a product owner for FLP@SAP in 2016, have been a SAPUI5 fanboy at first sight and will now finally be at my first UI5con. Already overexcited!",
-		"picture": "ThiloSeidel2016.jpg"
+		"picture": "ThiloSeidel2016.jpg",
+		"company": "SAP",
+		"session": "Add session title here"
 	},
 	{
 		"name": "Denny Schreder",
@@ -32,11 +34,15 @@
 	{
 		"name": "Martin Schaus",
 		"bio": "Lead Architect, User Interface Core Services",
+		"company": "SAP",
+		"session": "Add session title here",
 		"picture": "MartinSchaus.png"
 	},
 	{
 		"name": "Stanislava Baltova Yavor Ivanov",
 		"bio": "Stanislava is an Area Product Owner in UI5 organization based in Sofia. She is currently responsible for UI5 control development topics. In her previous role as Product Owner in UI5 she has gained extensive experience with Fiori 2.0, UI5 Support Tools, Demo Kit and many others.",
+		"company": "SAP",
+		"session": "Add session title here",
 		"picture": "StanislavaBaltova.jpg"
 	},
 	{
@@ -47,6 +53,8 @@
 	{
 		"name": "Mikhail Benderskiy Christian Voshage",
 		"bio": "Mikhail is UI5 developer at SAP and product owner of UI Adaptation.",
+		"company": "SAP",
+		"session": "Add session title here",
 		"picture": "Benderskiy_rs.jpg"
 	},
 	{
@@ -67,7 +75,9 @@
 	{
 		"name": "Michael Graf",
 		"bio": "Michael is product owner at SAP and OpenUI5 enthusiast. His passion is developing desirable UIs and working with web technologies. He also loves getting in touch with the community and evangelizing technology. Follow him here or on @Twitter",
-		"picture": "MichaelGraf.png"
+		"picture": "MichaelGraf.png",
+		"company": "SAP",
+		"session": "Add session title here"
 	},
 	{
 		"name": "HP Seitz",
@@ -92,7 +102,9 @@
 	{
 		"name": "Andreas Kunz",
 		"bio": "Andreas is an area architect within SAPUI5 development, with a special passion for the open source variant OpenUI5. He has been with UI5 from day one, in changing roles, and spoken at the first UI5con 2016 as well as other conferences like OSCON, Fluent, and SAP TechEd.",
-		"picture": "Andreas-openSAP-small.jpg"
+		"picture": "Andreas-openSAP-small.jpg",
+		"company": "SAP",
+		"session": "Add session title here"
 	},
 	{
 		"name": "Benedikt Schölch",
@@ -117,7 +129,9 @@
 	{
 		"name": "Matthias Oßwald",
 		"bio": "Matthias Oßwald is a web developer at SAP. He has been a member of the UI5 core team since 2013, responsible for various core features and tools around UI5.",
-		"picture": "MatthiasOsswald.jpg"
+		"picture": "MatthiasOsswald.jpg",
+		"company": "SAP",
+		"session": "Add session title here"
 	},
 	{
 		"name": "Michael Dell",
@@ -127,12 +141,16 @@
 	{
 		"name": "Stefan Beck",
 		"bio": "Chief Product Owner for SAPUI5 and OpenUI5.",
-		"picture": "StefanBeck.jpg"
+		"picture": "StefanBeck.jpg",
+		"company": "SAP",
+		"session": "Add session title here"
 	},
 	{
 		"name": "Savio Dimatteo",
 		"bio": "Savio Dimatteo is a Senior Developer in the UI Integration Team at SAP, where he is involved in the development of SAP Fiori Launchpad service APIs that enable the product to be integrated across multiple platforms. He enjoys working with UI5 as well as other web development frameworks built around HTML, CSS and JavaScript.",
-		"picture": "savio_dimatteo.jpeg"
+		"picture": "savio_dimatteo.jpeg",
+		"company": "SAP",
+		"session": "Add session title here"
 	},
 	{
 		"name": "Holger Schäfer",

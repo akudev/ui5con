@@ -209,7 +209,10 @@ function createSpeakersViewContent() {
 		$.each(oSpeakers, function(sTopicIndex, oSpeaker) {
 			var oSpeakerItem = sSpeakerTemplate
 				.replace("{{name}}", oSpeaker.name)
-				.replace("{{bio}}", oSpeaker.bio);
+				.replace("{{bio}}", oSpeaker.bio)
+				.replace("{{company}}", oSpeaker.company || "")
+				.replace("{{company}}", oSpeaker.session )
+				.replace("{{picture}}", oSpeaker.picture);
 			oSpeakersBlock.append(oSpeakerItem);
 		} );
 
