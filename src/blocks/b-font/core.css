@@ -81,4 +81,7 @@
     .b-font.size_36 {
         font-size: 24px;
         }
+    .b-font.size_15 {
+        font-size: 14px;
+    }
 }

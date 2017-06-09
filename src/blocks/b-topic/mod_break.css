@@ -6,10 +6,7 @@
 	height: 230px;
 	margin: 10px;
 }
-.b-topic__title {
-	height: 63px;
-	text-transform: uppercase;
-}
+
 .b-topic__format {
 	position: absolute;
 	bottom: 25px;
