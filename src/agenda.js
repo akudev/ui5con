@@ -8,6 +8,9 @@ var VIEW_PARAMETER = "view";
 var TRACKS_HASH = "tracks";
 var BOOTHS_HASH = "showfloor";
 var SPEAKERS_HASH = "speakers";
+var TOPIC_TYPE_BREAK = "break";
+
+var DISPLAY_NONE_CSS = "display_none";
 
 // init sessions start time
 var oInitialDate = new Date();
@@ -207,18 +210,60 @@ function createSpeakersViewContent() {
 		oLetterBlock.append(oLetterItem);
 
 		$.each(oSpeakers, function(sTopicIndex, oSpeaker) {
+			var oSession = findSession(oSpeaker.name);
+			var sSessionTitle = oSession ? oSession.title : "";
+			var sCompany = oSpeaker.company || "";
 			var oSpeakerItem = sSpeakerTemplate
 				.replace("{{name}}", oSpeaker.name)
 				.replace("{{bio}}", oSpeaker.bio)
-				.replace("{{company}}", oSpeaker.company || "")
-				.replace("{{company}}", oSpeaker.session )
+				.replace("{{company}}", sCompany)
+				.replace(/{{show-company}}/g, sCompany.length > 0 ? "" : DISPLAY_NONE_CSS)
+				.replace("{{session}}", sSessionTitle)
+				.replace("{{show-session}}", sSessionTitle.length > 0 ? "" : DISPLAY_NONE_CSS )
+				.replace("{{HH:MM}}", oSpeaker.meetMe )
+				.replace("{{show-meet-me}}", oSpeaker.meetMe ? "" : DISPLAY_NONE_CSS )
 				.replace("{{picture}}", oSpeaker.picture);
 			oSpeakersBlock.append(oSpeakerItem);
 		} );
-
 	} );
-
 }
+
+function findSession(sSpeakerName) {
+	var oSession = null;
+	var sSearchName = sSpeakerName.toUpperCase();
+	
+	$.each(oTracks, function(sTrackIndex, oTrack){
+		$.each(oTrack, function(sTopicIndex, oTopic) {
+			if (oTopic.type != TOPIC_TYPE_BREAK &&
+				oTopic.speaker.toUpperCase().indexOf(sSearchName)>= 0) {
+				oSession = oTopic;
+				// break the internal loop
+				return false; 
+			}
+		} );
+		
+		// break the external loop if session found
+		return (oSession == null);
+	});
+
+	if(oSession == null) {
+		$.each(oBooths, function(sTrackIndex, oTrack){
+			$.each(oTrack, function(sTopicIndex, oTopic) {
+				if (oTopic.type != TOPIC_TYPE_BREAK &&
+					oTopic.speaker.toUpperCase().indexOf(sSearchName)>= 0) {
+					oSession = oTopic;
+					// break the internal loop
+					return false;
+				}
+			} );
+
+			// break the external loop if session found
+			return (oSession == null);
+		});
+	}
+	return oSession;
+}
+
 function prepareSpeakersInfo() {
 	oSpeakers = $(oSpeakers).sort(function(oSpeaker1, oSpeaker2) {
 		var sComp1 = oSpeaker1.name.toUpperCase();

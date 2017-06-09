@@ -163,18 +163,18 @@
 	<script id="speaker-item-template" type="text/template">
 		<div class="b-list__item">
 			<div class="b-topic mod_speaker">
-				<div class=" mod_speaker">
+				<div class="b-topic__title_block">
 					<div class="b-topic__title b-font size_15 color_white b-ui margin_right_10 column_1">
 						{{name}}
 					</div>
-					<div class="b-topic__title_splitter b-font size_15 color_gray b-ui margin_right_10">
+					<div class="b-topic__title_splitter b-font size_15 color_gray b-ui margin_right_10 {{show-company}}">
 						|
 					</div>
 
-					<div class="b-topic__title b-font size_15 color_gray b-ui column_2">
+					<div class="b-topic__title b-font size_15 color_gray b-ui column_2 {{show-company}}">
 						{{company}}
 					</div>
-					<div class="b-topic__title b-font size_15 color_gray b-ui column_3">
+					<div class="b-topic__title b-font size_15 color_gray b-ui column_3 {{show-session}}">
 						{{session}}
 					</div>
 				</div>
@@ -186,7 +186,7 @@
 						</div>
 						<!--<image class="b-topic__picture" src="src/data/pictures/Andreas-openSAP-small.jpg" height="100px" width="100px"/>
 						-->
-						<div class="b-topic__meet_me b-font size_15 color_yellow b-ui">
+						<div class="b-topic__meet_me b-font size_15 color_yellow {{show-meet-me}}">
 							MEET ME AT {{HH:MM}}
 						</div>
 					</div>

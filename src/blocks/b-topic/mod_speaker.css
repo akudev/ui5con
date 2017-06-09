@@ -60,6 +60,10 @@
 		float: none;
 		text-align: left;
 	}
+
+	.b-topic__title_block {
+		height: 100px;
+	}
 }
 
 @media (max-width: 700px) {
@@ -68,9 +72,17 @@
 	}
 
 	.b-topic.mod_speaker .b-topic__title {
-		height: 25px;
+		height: 20px;
 	}
 
+
+
+}
+
+@media (max-width: 390px) {
+	.b-topic.mod_speaker {
+		height: 500px;
+	}
 	.b-topic__title_splitter{
 		display: none;
 	}
@@ -79,13 +91,12 @@
 		clear: left;
 		float: none;
 	}
-}
 
-@media (max-width: 390px) {
-	.b-topic.mod_speaker {
-		height: 500px;
-	}
 	.b-topic__bio {
 		height: 240px;
+	}
+
+	.b-topic__title_block {
+		height: 120px;
 	}
 }

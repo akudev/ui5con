@@ -147,9 +147,11 @@ a:hover {
 .float-left {
     float: left;
 }
+
+
 @media (max-width: 390px) {
     .flex-container.mod_speaker {
-       display: block;
+        display: block;
     }
 }
 
@@ -162,7 +164,7 @@ a:hover {
     height: auto;
     transition: height 0.15s ease-in;
 }
-.button-hidden {
+.display_none {
     display: none;
 }
 
