@@ -50,7 +50,6 @@ window.switchAgenda = function(sViewName) {
 };
 
 window.download = function(sFormat) {
-	alert ("huhu" + sFormat);
 	if (sFormat === 'pdf') {
 		window.location.href = "http://openui5.org/ui5con/blob/master/src/downloads/ui5con_2017_agenda.pdf"
 	}
