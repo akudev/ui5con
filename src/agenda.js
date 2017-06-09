@@ -49,6 +49,16 @@ window.switchAgenda = function(sViewName) {
 	window.location.href = addOrReplaceUrlParameter(VIEW_PARAMETER, sViewName)
 };
 
+window.download = function(sFormat) {
+	alert ("huhu" + sFormat);
+	if (sFormat === 'pdf') {
+		window.location.href = "http://openui5.org/ui5con/blob/master/src/downloads/ui5con_2017_agenda.pdf"
+	}
+	else {
+		window.location.href = "http://openui5.org/ui5con/blob/master/src/downloads/ui5con_2017_agenda.xlsx"
+	}
+};
+
 /*
  * Ensures the hash is valid and updates it.
  * Default hash value - 'tracks'
