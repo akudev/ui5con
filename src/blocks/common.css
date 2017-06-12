@@ -216,19 +216,16 @@ a:hover {
     bottom: 20px;
     right: 30px;
     z-index: 99;
-    border: 2px solid #ff5743;
-    outline: none;
-    background-color: transparent;
-    color: #ff5743;
     cursor: pointer;
-    padding: 15px 10px;
-    border-radius: 25px;
+    padding: 40px 40px;
+    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABQCAYAAACOEfKtAAAACXBIWXMAAAsSAAALEgHS3X78AAADi0lEQVR42u3dPXKbQBQH8D87qZFuIN3A3CCkU2fVaoROEN0g5AbkBJEbarmjMzpB8Aki3cDWBZSCt/IGsTIgBAu8N+OxZ10Y//z2e1lbp9MJHNVDMAEDMmCX40sTP+S4mE0BTAE4AMYMWAxsDsCljxFn4OdoY0JbA3jgKlwObk0f1zJtB+ANQMKAH3gegEAD9wpgAyC2wyjhDLxs4zYAvma+9U7lgR1Ge67C+XhzQhpl4AKCe+NhjB4vAPA9U/wMwBsaXGnA42K2AbDMZJ1nh9GWB9Ll8V4BzIfSzt0EqMFzh1plS82FaZjCeFfC0q0HHhczB8AfxqsASLOLBMCEig4AHMYrXoXXCh6ow2C8IhlIs4y/StFPO4x8piqegYHy9YHxSgBS9j0qRR4TlctANdt2dhjFTFQQkHrepaYqcxTIwHmm7dsyT3VAxqsAqHYeG1MfmJoaswCPi5mrlL2bugRP08s9zdGNykBHKYsNxouRroT/NgUxDzAxHE+GEYgScGpqBmrwjEGUgOMOVFsg3Ub4hnRpzQhECXg+SWDK7EOD59LzuTmIfpuAXWjzPDk6oKW1LOIP2n4YNqAGb5WdGWkQl00jio7g5aKYgCi6imcKougyngmIout4bSOKPuC1iSj6gtcWomgJb4zLI3I347WBKFrCi/H/Oera8JpGFH3EaxJR9BUvB3F3D0TRZzwV0Q4jF8BT3Yii73gZSK9uRDEUvHshCs0v3Uu8eyBKQLWBdWp6TiPxPkH06qjCdS3vB6biaRCfqjyjBEzqzkB6mBXS84XG4WUQV/S5dMhT+nulzK3x4YyFq+s5hdJe1d0GDiIE/QUSpLteADCi9+E4SnYi6qYNA94KaNopKOMBadvwXI05C6uNA9Wxm8885QHV7nxyXMzWTFQCkF5f/aVmIbeF5adyfqYt3DBTCUBawVXbv0eTjtSaFtded43xcSuHPFqWMNnnVViGl6nKMb0KxlEEkDoUdSw4ArDlTqV4BsrTqiul6AFAQqcKOFBgT0RZ1zuPD6k6u8xXcFMpB3EE4KWtc8md6IU1PXPetU8HpOeXYwYshugQYvaOwB0Af2iQVpVrkKkn9nF5j5aE3ADYDuGiCuuWe6QpGwNcXoMn4xnpdkFv7xC06riIm3pk/wqk2l7uGfB6Rno0AJ9wG3g7przJ10FPb/K1mrxLv4+Db4v/GUEDMxEOBrxb/AN/ivD9oAsXNQAAAABJRU5ErkJggg==') center no-repeat;
+    background-size: 100% 100%;
+    border: none;
 }
 
 .b-floatButton:hover {
-    color: #ffa242;
-    border: 2px solid #ffa242;
     background-color:  rgba(255, 162, 66, 0.2);
+    border-radius: 31px 0 0 31px;
 }
 
 .b-display {
