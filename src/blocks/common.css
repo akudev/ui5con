@@ -226,7 +226,9 @@ a:hover {
 }
 
 .b-floatButton:hover {
-    background-color: rgba(255, 87, 67, 0.3);
+    color: #ffa242;
+    border: 2px solid #ffa242;
+    background-color:  rgba(255, 162, 66, 0.2);
 }
 
 .b-display {

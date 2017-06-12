@@ -11,6 +11,7 @@ var SPEAKERS_HASH = "speakers";
 var TOPIC_TYPE_BREAK = "break";
 
 var DISPLAY_NONE_CSS = "display_none";
+var ACTIVE_BUTTON_CSS = "active";
 
 // init sessions start time
 var oInitialDate = new Date();
@@ -115,9 +116,11 @@ function updateTracksView(sHash) {
 	fillTracksInfo();
 	if(sHash == TRACKS_HASH) {
 		$("#tracksSection").show();
+		$("#tracks").addClass(ACTIVE_BUTTON_CSS);
 	}
 	else {
 		$("#tracksSection").hide();
+		$("#tracks").removeClass(ACTIVE_BUTTON_CSS);
 	}
 }
 
@@ -127,10 +130,12 @@ function updateTracksView(sHash) {
 function updateBoothsView(sHash) {
 	if(sHash == BOOTHS_HASH) {
 		$("#boothsSection").show();
+		$("#showfloor").addClass(ACTIVE_BUTTON_CSS);
 		fillBoothsInfo();
 	}
 	else {
 		$("#boothsSection").hide();
+		$("#showfloor").removeClass(ACTIVE_BUTTON_CSS);
 	}
 }
 
@@ -140,10 +145,12 @@ function updateBoothsView(sHash) {
 function updateSpeakersView(sHash) {
 	if(sHash == SPEAKERS_HASH) {
 		$("#speakersSection").show();
+		$("#speakers").addClass(ACTIVE_BUTTON_CSS);
 		fillSpeakersInfo();
 	}
 	else {
 		$("#speakersSection").hide();
+		$("#speakers").removeClass(ACTIVE_BUTTON_CSS);
 	}
 }
 

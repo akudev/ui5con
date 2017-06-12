@@ -12,6 +12,7 @@
 	border: 1px solid gray;
 	width: 160px;
 	text-transform: uppercase;
+	color: #ff5743;
 }
 
 .b-list__button:hover {
@@ -19,8 +20,8 @@
 	background-color:  rgba(255, 162, 66, 0.2);
 }
 
-.b-list__button:target {
+.b-list__button.active {
 	color: #ffa242;
-	border: 1px solid gray;
+	/*border: 1px solid gray;*/
 }
 
