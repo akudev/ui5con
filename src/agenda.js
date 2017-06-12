@@ -335,7 +335,7 @@ function _createTopicContent(oTopic) {
 			case SESSION_TYPE_LECTURE:
 				sTypeCss = TYPE_LECTURE_CSS;
 				break;
-			default:
+			case SESSION_TYPE_HANSON:
 				sTypeCss = TYPE_HANSON_CSS;
 		}
 
