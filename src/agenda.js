@@ -57,15 +57,6 @@ window.switchAgenda = function(sViewName) {
 	window.location.href = addOrReplaceUrlParameter(VIEW_PARAMETER, sViewName)
 };
 
-window.download = function(sFormat) {
-	if (sFormat === 'pdf') {
-		window.location.href = "http://openui5.org/ui5con/blob/master/src/downloads/ui5con_2017_agenda.pdf"
-	}
-	else {
-		window.location.href = "http://openui5.org/ui5con/blob/master/src/downloads/ui5con_2017_agenda.xlsx"
-	}
-};
-
 function prepareTracks(oTracks, sIdPrefix) {
 	var iTrackId = 0;
 	$.each(oTracks, function(sTrackIndex, oTrack){

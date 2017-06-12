@@ -1,11 +1,12 @@
 /* mod_agenda */
 .b-section.mod_agenda {
-	padding: 70px 0;
+	padding: 20px 0;
 	background-color: #19181e;
 }
 
+/*
 @media (max-width: 550px) {
 	.b-section.mod_agenda {
 		padding: 40px 0;
 	}
-}
+}*/

@@ -1,0 +1,29 @@
+.b-header.mod_agenda {
+	height: 312px ;
+	position: relative;
+	overflow: hidden;
+	background: url('background.jpg') no-repeat 50% 50%;
+	background-size: cover;
+}
+
+.b-header.mod_agenda .b-header__logo {
+	width: 836px;
+	height: 60px;
+	margin: 10px auto;
+	display: block;
+	background: url('UI5con_logo_plain.png') no-repeat;
+	background-position: center;
+	background-size: contain;
+	cursor: pointer;
+}
+
+.b-header.mod_agenda .b-header__footer {
+	margin-top: 20px;
+	height: 105px;
+	background: rgba(7, 7, 10, .5);
+	padding-top: 30px;
+}
+
+.b-header.mod_agenda .b-header__title {
+	margin: 30px auto;
+}
