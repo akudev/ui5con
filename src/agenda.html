@@ -109,12 +109,12 @@
 		</div>
 	</script>
 	<script id="track-item-template" type="text/template">
-		<div class="b-track__item duration_{{duration}}">
+		<div class="b-track__item duration_{{duration}}"  id="{{id}}">
 			<div class="b-topic">
 				<div class="b-topic__title b-font size_15 color_white b-ui margin_20">
 					{{title}}
 				</div>
-				<a href="javascript:showPopup('{{id}}');" class="b-topic__detailsLink">Details</a>
+				<a href="javascript:showPopup('{{trackId}}');" class="b-topic__detailsLink">Details</a>
 				<div class="b-font size_13 color_gray">{{speaker}}</div>
 				<div class="b-topic__time b-font size_13 color_white">{{time}}</div>
 				<div class="b-topic__format b-font size_13 color_gray">{{type}}</div>
@@ -122,12 +122,12 @@
 		</div>
 	</script>
 	<script id="track-item-template-20" type="text/template">
-		<div class="b-track__item duration_20">
+		<div class="b-track__item duration_20" id="{{id}}">
 			<div class="b-topic">
 				<div class="b-topic__title b-font size_15 color_white b-ui margin_5">
 					{{title}}
 				</div>
-				<a href="javascript:showPopup('{{id}}');" class="b-topic__detailsLink">Details</a>
+				<a href="javascript:showPopup('{{trackId}}');" class="b-topic__detailsLink">Details</a>
 				<div class="b-font size_13 color_gray">{{speaker}}</div>
 				<div class="b-topic__time b-font size_13 color_white">{{time}}</div>
 				<div class="b-topic__format b-font size_13 color_gray">{{type}}</div>
@@ -140,7 +140,6 @@
 				<div class="b-topic__title b-font size_15 color_white b-ui">
 					{{title}}
 				</div>
-				<!--<div class="b-topic__format b-font size_13 color_gray">{{time}}</div>-->
 			</div>
 		</div>
 	</script>
@@ -156,14 +155,13 @@
 			<div id="letter_{{letter}}" class="b-timeline">
 			</div>
 			<div class="b-list mod_speakers" id="speakersBlock_{{letter}}">
-				<!-- speakers with customised track template -->
 			</div>
 		</div>
 	</script>
 	<script id="speaker-item-template" type="text/template">
 		<div class="b-list__item">
 			<div class="b-topic mod_speaker">
-				<div class="b-topic__title_block">
+				<div class="b-topic__title_block  b-ui margin_10">
 					<div class="b-topic__title b-font size_15 color_white b-ui margin_right_10 column_1">
 						{{name}}
 					</div>
@@ -175,22 +173,20 @@
 						{{company}}
 					</div>
 					<div class="b-topic__title b-font size_15 color_gray b-ui column_3 {{show-session}}">
-						{{session}}
+						<a href="agenda.html?view={{view}}#{{session_id}}">{{session}}</a>
 					</div>
 				</div>
 				<div class="flex-container b-topic__content mod_speaker">
-					<div class="b-topic__image-column fix-item b-ui margin_right_10">
+					<div class="b-topic__image-column fix-item b-ui margin_right_15">
 						<div
 							class="b-topic__picture"
 							style="background-image:url('src/data/pictures/{{picture}}');">
 						</div>
-						<!--<image class="b-topic__picture" src="src/data/pictures/Andreas-openSAP-small.jpg" height="100px" width="100px"/>
-						-->
 						<div class="b-topic__meet_me b-font size_15 color_yellow {{show-meet-me}}">
 							MEET ME AT {{HH:MM}}
 						</div>
 					</div>
-					<div class="b-topic__bio fade b-font size_14 color_white flex-item b-ui margin_left_10" ><p>{{bio}}</p>
+					<div class="b-topic__bio b-font size_14 color_white flex-item b-ui margin_left_10" ><p>{{bio}}</p>
 					</div>
 				</div>
 			</div>

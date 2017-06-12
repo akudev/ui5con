@@ -27,8 +27,10 @@ var sCurrentMode = TRACKS_HASH;
 
 $(document).ready(function() {
 
-	var sHash = getUrlParameter(VIEW_PARAMETER) || TRACKS_HASH;//updateHash();
-	updatePage(sHash);
+	prepareTracks(oTracks, "s_");
+	prepareTracks(oBooths, "b_");
+	var sHash = getUrlParameter(VIEW_PARAMETER) || TRACKS_HASH;
+	updatePage(sHash, window.location.hash);
 
 	// close popup on escape key
 	$(document).keyup(function(e){
@@ -61,6 +63,16 @@ window.download = function(sFormat) {
 	}
 };
 
+function prepareTracks(oTracks, sIdPrefix) {
+	var iTrackId = 0;
+	var oDate = oInitialDate;
+	$.each(oTracks, function(sTrackIndex, oTrack){
+		$.each(oTrack, function(sTopicIndex, oTopic) {
+			oTopic.id = sIdPrefix + iTrackId++;
+		} );
+	});
+}
+
 /*
  * Ensures the hash is valid and updates it.
  * Default hash value - 'tracks'
@@ -86,19 +98,23 @@ function updateHash() {
  * Updates page layout according to the actual hash.
  * The respective view becomes visible, other - hidden.
  */
-function updatePage(sHash) {
-	updateTracksView(sHash);
-	updateBoothsView(sHash);
-	updateSpeakersView(sHash);
+function updatePage(sParam, sHash) {
+	updateTracksView(sParam);
+	updateBoothsView(sParam);
+	updateSpeakersView(sParam);
+	if(sHash) {
+		var top = $(sHash).position().top;
+		$(window).scrollTop( top );
+	}
 }
 
 /*
  * Updates visibility of the tracks view, loads its content if necessary.
  */
 function updateTracksView(sHash) {
+	fillTracksInfo();
 	if(sHash == TRACKS_HASH) {
 		$("#tracksSection").show();
-		fillTracksInfo();
 	}
 	else {
 		$("#tracksSection").hide();
@@ -211,6 +227,8 @@ function createSpeakersViewContent() {
 
 		$.each(oSpeakers, function(sTopicIndex, oSpeaker) {
 			var oSession = findSession(oSpeaker.name);
+
+			var sSessionId = oSession ? oSession.id : "";
 			var sSessionTitle = oSession ? oSession.title : "";
 			var sCompany = oSpeaker.company || "";
 			var oSpeakerItem = sSpeakerTemplate
@@ -218,6 +236,8 @@ function createSpeakersViewContent() {
 				.replace("{{bio}}", oSpeaker.bio)
 				.replace("{{company}}", sCompany)
 				.replace(/{{show-company}}/g, sCompany.length > 0 ? "" : DISPLAY_NONE_CSS)
+				.replace("{{view}}", sSessionId.indexOf("s_") >= 0 ? TRACKS_HASH : BOOTHS_HASH)
+				.replace("{{session_id}}", sSessionId)
 				.replace("{{session}}", sSessionTitle)
 				.replace("{{show-session}}", sSessionTitle.length > 0 ? "" : DISPLAY_NONE_CSS )
 				.replace("{{HH:MM}}", oSpeaker.meetMe )
@@ -302,7 +322,8 @@ function _createTopicContent(oTopic) {
 			? $("#track-item-template-20").html()
 			: $("#track-item-template").html() ;
 		sTemplate = sTemplate
-			.replace("{{id}}", oTopic.speaker + "@@||@@" + oTopic.title)
+			.replace("{{trackId}}", oTopic.speaker + "@@||@@" + oTopic.title)
+			.replace("{{id}}", oTopic.id)
 			.replace("{{speaker}}", oTopic.speaker)
 			.replace("{{type}}", oTopic.type);
 	}

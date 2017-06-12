@@ -7,25 +7,25 @@
     margin: 10px;
 }
 
-.b-topic__title {
-    height: 63px;
-    text-transform: uppercase;
-}
-.b-topic__meet_me {
-    height: 40px;
-    text-transform: uppercase;
-}
-.b-topic__format {
-    position: absolute;
-    bottom: 25px;
-    right: 25px;
-}
+    .b-topic__title {
+        text-transform: uppercase;
+    }
 
-.b-topic__time {
-     position: absolute;
-     bottom: 25px;
-     left: 25px;
- }
+    .b-topic__meet_me {
+        height: 40px;
+        text-transform: uppercase;
+    }
+    .b-topic__format {
+        position: absolute;
+        bottom: 25px;
+        right: 25px;
+    }
+
+    .b-topic__time {
+         position: absolute;
+         bottom: 25px;
+         left: 25px;
+     }
 
 .b-topic:before {
     pointer-events: none;
