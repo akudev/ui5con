@@ -1,16 +1,19 @@
 {
+	{
 	"track1": [
 		{
 			"title": "Opening",
 			"speaker": "Frederic Berg",
 			"type": "",
-			"duration": 20
+			"duration": 20,
+			"abstract": "I admit, offline UI5 apps are not exactly 'WOW!'' - It's been done before, many many times. Except that… well I've done it many times according to the SAP Standards and using the SMP SDK. It’s tedious, and comes at a cost.So I figured: I can improve this. 1. First of all, if you're developing in openUI5, you don't always have an oData service in the backend. More often than not, you'll be limited to a JSON service. So the offline oData Plugin is not an option. More so since you need an SMP license and you might not be in an SAP environment. 2. Secondly, the SAP ERP data model is very ill-suited for data synchronizations. If you're not working on an SAP backend and you can still influence the data model, better do it right. 3. Thirdly, executing operations on UI5 models is cumbersome, since you need to access the entity using a path, pull the data out, call some function with the data, catch the result and move it back into the model-entity… Cumbersome… Bit by bit, we'll tackle each of these issues and introduce: Timesliced database, BusinessObjects (no, not businessObjects-analytics, but software represenations of a business object, as in OO), BusinessObjectModel, Local DB, Synch-model"
 		},
 		{
 			"title": "UI5 News",
 			"speaker": "Stefan Beck",
 			"type": "Key Note",
-			"duration": 30
+			"duration": 30,
+			"abstract": ""
 		},
 		{
 			"type": "break",
@@ -20,7 +23,8 @@
 			"title": "UI5 Evolution – increase performance, fix architectural gaps, embrace technologies",
 			"speaker": "Peter Muessig, Andreas Ecker",
 			"type": "Lecture",
-			"duration": 40
+			"duration": 40,
+			"abstract" : "This session will present the ideas, concept and current state of UI5 evolution. The evolution of the core framework, rendering layer and build tooling could be shown; eventually an outlook for a new programming model layer. Maybe, this topic would be worth to be part of the “keynote” of the UI5con as it is of a very fundamental interest."
 		},
 		{
 			"type": "break",
@@ -30,7 +34,8 @@
 			"title": " SAPUI5 on SAP HANA XSA - SAP Full-stack JavaScript Development",
 			"speaker": "HP Seitz",
 			"type": "Lecture",
-			"duration": 40
+			"duration": 40,
+			"abstract" : "Especially with the availability of SAP HANA Express Edition since JavaScript development with SAP Backend. The session will demonstrate utilizing SAPUI5 on the SAP HANA Platform with HANA XSA (Node.js) using SAP Web IDE for SAP HANA and also an external IDE like WebStorm. This is the logical successor of the session 'Full-stack JavaScript with OpenUI5' about the NEMO stack from the first UI5Con in Frankfurt."
 		},
 		{
 			"type": "break",
@@ -40,7 +45,8 @@
 			"title": "Upcoming – UI5 OData V4 Model",
 			"speaker": "Patric Ksinsik, Thomas Chadzelek",
 			"type": "Lecture",
-			"duration": 40
+			"duration": 40,
+			"abstract" : "Why is there the new OData Version 4.0 and how does UI5 support for it differ from OData V2 support? Learn about the architecture principles of the UI5 OData V4 model, its feature set and the current implementation status."
 		},
 		{
 			"type": "break",
@@ -50,7 +56,8 @@
 			"title": "Simplify UI5 Tool Setup - One Node.js Module to Serve Them All",
 			"speaker": "Maximilian Lenkeit",
 			"type": "Lecture",
-			"duration": 20
+			"duration": 20,
+			"abstract" : "Web server, reverse proxy, ESLint, test runner, code coverage, continuous integration, minification, automated deployment - you will have to deal with most of these tools when you do serious SAPUI5 development. While SAP Web IDE already covers lots of these tools, it sometimes doesn’t give you the necessary flexibility, so we usually resort to Grunt – The JavaScript Task Runner. With Grunt's huge ecosystem, we can configure all of these tools and shape our workflow as we wish. But the configuration is cumbersome. Rather quickly, we end up with 20 or more Node.js modules that we need to make play together nicely so that we can eventually execute grunt serve or grunt build. In this session, you will get a glimpse at the tool and understand the concept and the problem it solves. You will also learn how to use the tool for your own project, so that you can focus in development, and not on tools."
 		},
 		{
 			"type": "break",
@@ -60,7 +67,8 @@
 			"title": "UI5Lab - Collaborators Wanted for a community-driven repository",
 			"speaker": "Michael Graf, Emanuele Ricci",
 			"type": "Lecture",
-			"duration": 20
+			"duration": 20,
+			"abstract" : "This session will show the status of the community-driven “Custom UI5 Repo” project that we have just kicked of today. We don’t know yet what exactly it will look like as we drive it together with the community. Therefore, we need to fine-tune the abstract later on but it would be a really good showcase for UI5con. Depending on the status of the project in June we will 1. Show the current plans and working mode; 2. Highlight the community engagement and encourage participants to join in; 3. Show the prototype or working repository and the content that we have aggregated so far"
 		},
 		{
 			"type": "break",
