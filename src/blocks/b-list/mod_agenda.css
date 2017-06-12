@@ -22,6 +22,13 @@
 
 .b-list__button.active {
 	color: #ffa242;
-	/*border: 1px solid gray;*/
 }
 
+@media (max-width: 700px) {
+	.b-list__button.b-font.size_18 {
+		font-size: 14px;
+		width: auto;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+}

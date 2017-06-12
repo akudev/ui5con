@@ -9,3 +9,11 @@
 	top: 0;
 	right: 0;
 }
+
+@media (max-width: 700px) {
+	.b-section-download {
+		position: inherit;
+		top: auto;
+		right: auto;
+	}
+}

@@ -1,18 +1,12 @@
-/*
-.b-list.mod_download .b-list__button {
-	padding: 10px 0;
-	background-color: #19181e;
-	border: 1px solid gray;
-	width: 70px;
-	text-transform: uppercase;
-}
-*/
+
 .b-list.mod_download {
-	justify-content: space-around;
+	justify-content: center;
+	margin-bottom: 10px;
 }
 
 .b-list.mod_download .b-list__item a {
 	text-decoration: none;
+	padding: 10px;
 }
 
 .b-list.mod_download .b-list__item a:hover {
