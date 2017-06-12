@@ -17,7 +17,7 @@
 		{
 			"title": "New Demo Kit - Your Way to UI5",
 			"speaker": "Petya Begovska",
-			"type": "session",
+			"type": "Session",
 			"duration": 40
 		},
 		{
@@ -27,7 +27,7 @@
 		{
 			"title": "Adapting UI @ Runtime",
 			"speaker": "Mikhail Benderskiy, Christian Voshage",
-			"type": "session",
+			"type": "Session",
 			"duration": 40
 		},
 		{
@@ -37,7 +37,7 @@
 		{
 			"title": "SEO for OpenUI5 Apps",
 			"speaker": "Yavor Ivanov, Stanislava Baltova",
-			"type": "session",
+			"type": "Session",
 			"duration": 40
 		},
 		{
@@ -47,7 +47,7 @@
 		{
 			"title": "Components – More Performance!",
 			"speaker": "Peter Muessig, Matthias Osswal",
-			"type": "session",
+			"type": "Session",
 			"duration": 40
 		},
 		{
@@ -57,7 +57,7 @@
 		{
 			"title": "Create your own UI5 controls – what’s coming up",
 			"speaker": "Andreas Kunz",
-			"type": "session",
+			"type": "Session",
 			"duration": 40
 		},
 		{
@@ -67,7 +67,7 @@
 		{
 			"title": "Time or Money? Time (DateFormat) and Money (NumberFormat)!",
 			"speaker": "Jiawei Cao, Malte Wedel",
-			"type": "session",
+			"type": "Session",
 			"duration": 40
 		},
 		{
@@ -77,7 +77,7 @@
 		{
 			"title": "Effortless OPA testing with Gherkin Reusable Specs",
 			"speaker": "Savio Dimatteo",
-			"type": "session",
+			"type": "Session",
 			"duration": 40
 		},
 		{
@@ -93,7 +93,7 @@
 		{
 			"title": "Behavior-Driven Development with OPA5 automated tests",
 			"speaker": "Andras Gabor Konya, Lorant Guth",
-			"type": "session",
+			"type": "Session",
 			"duration": 40
 		},
 		{
@@ -103,7 +103,7 @@
 		{
 			"title": "The OpenUI5 Developer Blog - Behind the Scenes",
 			"speaker": "Holger Schäfer",
-			"type": "session",
+			"type": "Session",
 			"duration": 40
 		},
 		{
@@ -113,7 +113,7 @@
 		{
 			"title": "Advanced Charting Controls Coming to UI5",
 			"speaker": "Ondrej Bohaciak, Vaclav Vopenka",
-			"type": "session",
+			"type": "Session",
 			"duration": 40
 		},
 		{
@@ -123,7 +123,7 @@
 		{
 			"title": "Virtual Tour around a Company Site with UI5",
 			"speaker": "Helmut Tammen",
-			"type": "session",
+			"type": "Session",
 			"duration": 40
 		},
 		{
@@ -133,7 +133,7 @@
 		{
 			"title": "Easy integrations with UI5",
 			"speaker": "Meredith Hassett",
-			"type": "session",
+			"type": "Session",
 			"duration": 40
 		},
 		{
@@ -143,7 +143,7 @@
 		{
 			"title": "Code-free Fiori Apps with SAP Web IDE RAD and Layout Editor",
 			"speaker": "Vered Constantin",
-			"type": "session",
+			"type": "Session",
 			"duration": 40
 		},
 		{
@@ -153,7 +153,7 @@
 		{
 			"title": "Drafts: Extending Two-Way Binding to Provide an Editing Concept",
 			"speaker": "Ian Robert Taylor, Dirk Teufel",
-			"type": "session",
+			"type": "Session",
 			"duration": 40
 		},
 		{
@@ -163,7 +163,7 @@
 		{
 			"title": "A hitchhiker‘s guide to the UI5 demo apps & tutorials",
 			"speaker": "Elena Makarenko",
-			"type": "session",
+			"type": "Session",
 			"duration": 40
 		},
 		{
@@ -175,49 +175,49 @@
 		{
 			"title": "UI5 Controls for Document Handling",
 			"speaker": "Pia Kinkel, Christoph Laux",
-			"type": "session",
+			"type": "Session",
 			"duration": 60
 		},
 		{
 			"title": "Embedded Analytics with Charts",
 			"speaker": "Pia Kinkel, Christoph Laux, Bohdan Pukalskyi",
-			"type": "session",
+			"type": "Session",
 			"duration": 60
 		},
 		{
 			"title": "Developer Clinic: UI5 Controls",
 			"speaker": "Pia Kinkel, Bohdan Pukalskyi, Dominic Holzwarth",
-			"type": "session",
+			"type": "Session",
 			"duration": 60
 		},
 		{
 			"title": "How to Build an Ice Cream Machine with UI5 Controls",
 			"speaker": "Christoph Laux, Bohdan Pukalskyi",
-			"type": "session",
+			"type": "Session",
 			"duration": 60
 		},
 		{
 			"title": "Tiles in UI5",
 			"speaker": "Christoph Laux, Bohdan Pukalskyi",
-			"type": "session",
+			"type": "Session",
 			"duration": 60
 		},
 		{
 			"title": "Smart Micro Charts",
 			"speaker": " Bohdan Pukalskyi, Dominic Holzwarth",
-			"type": "session",
+			"type": "Session",
 			"duration": 60
 		},
 		{
 			"title": "Embedded Analytics with Charts",
 			"speaker": "Pia Kinkel, Christoph Laux, Bohdan Pukalskyi",
-			"type": "session",
+			"type": "Session",
 			"duration": 60
 		},
 		{
 			"title": "Integrate Feed Capabilities Using UI5 Controls",
 			"speaker": "Christoph Laux",
-			"type": "session",
+			"type": "Session",
 			"duration": 60
 		}
 	]

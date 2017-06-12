@@ -168,7 +168,7 @@ function fillBoothsInfo() {
 	if( !bBoothLoaded ) {
 		oInitialDate.setHours(10);
 		oInitialDate.setMinutes(00);
-		fillTimeLine("timeLine-booths", oInitialDate, 17);
+		fillTimeLine("timeLine-booths", oInitialDate, 18);
 		fillTracks(oBooths);
 		bBoothLoaded = true;
 	}
@@ -186,7 +186,7 @@ function fillTimeLine(sTimeLineId, oInitialDate, iCount) {
 
 	var sTemplate = $("#timeline-item-template").html();
 
-	for (var i = 1; i < 20; i++) {
+	for (var i = 1; i < iCount; i++) {
 		var $content = sTemplate.replace("{{value}}", oDate.toTimeString().substring(0,5));
 		$("#" + sTimeLineId).append($content);
 		oDate = _addMinutes(oDate, 30);
@@ -328,7 +328,7 @@ function _createTopicContent(oTopic) {
 	}
 	else {
 		var sTypeCss = "";
-		switch (oTopic.type) {
+		/*switch (oTopic.type) {
 			case SESSION_TYPE_KEYNOTE:
 				sTypeCss = TYPE_KEYNOTE_CSS;
 				break;
@@ -337,7 +337,7 @@ function _createTopicContent(oTopic) {
 				break;
 			case SESSION_TYPE_HANSON:
 				sTypeCss = TYPE_HANSON_CSS;
-		}
+		}*/
 
 		sTitle = oTopic.title;
 		sTemplate = (iDuration == 20)

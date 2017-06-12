@@ -4,9 +4,8 @@
 	background-color: #19181e;
 }
 
-/*
-@media (max-width: 550px) {
-	.b-section.mod_agenda {
-		padding: 40px 0;
-	}
-}*/
+.b-section-download {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
