@@ -2,7 +2,7 @@
 	"booth1": [
 		{
 			"type": "break",
-			"duration": 70
+			"duration": 10
 		},
 		{
 			"title": "Metadata-Driven Controls with Rest Services",
@@ -88,7 +88,7 @@
 	"booth2": [
 		{
 			"type": "break",
-			"duration": 70
+			"duration": 10
 		},
 		{
 			"title": "Behavior-Driven Development with OPA5 automated tests",
@@ -172,10 +172,6 @@
 		}
 	],
 	"booth3": [
-		{
-			"type": "break",
-			"duration": 30
-		},
 		{
 			"title": "UI5 Controls for Document Handling",
 			"speaker": "Pia Kinkel, Christoph Laux",

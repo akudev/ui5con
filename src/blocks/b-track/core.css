@@ -13,31 +13,31 @@
 	}
 
 	.b-track__item.duration_10 {
-		height: 80px;
+		height: 70px;
 	}
 
 	.b-track__item.duration_20 {
-		height: 160px;
+		height: 140px;
 	}
 
 	.b-track__item.duration_30 {
-		height: 240px;
+		height: 210px;
 	}
 
 	.b-track__item.duration_40 {
-		height: 320px;
+		height: 280px;
 	}
 
 	.b-track__item.duration_50 {
-		height: 400px;
+		height: 350px;
 	}
 
 	.b-track__item.duration_60 {
-			height: 480px;
+			height: 420px;
 		}
 
 	.b-track__item.duration_70 {
-		height: 560px;
+		height: 490px;
 	}
 
 		.b-track__item .b-topic {

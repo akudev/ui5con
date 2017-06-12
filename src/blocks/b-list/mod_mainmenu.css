@@ -2,10 +2,6 @@
 	padding: 15px 20px;
 }
 
-/*.b-list.mod_mainmenu .b-list__item:hover {
-	background-color: rgba(255, 162, 66, 0.2);
-}*/
-
 .b-list.mod_mainmenu {
 	justify-content: center;
 }

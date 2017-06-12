@@ -43,8 +43,10 @@ $(document).ready(function() {
 });
 
 $(window).bind( "hashchange", function() {
-//	var sHash = updateHash();
-//	updatePage(sHash);
+	if(sHash) {
+		var iTop = $(sHash).position().top;
+		$(window).scrollTop( iTop );
+	}
 });
 
 /*
@@ -65,7 +67,6 @@ window.download = function(sFormat) {
 
 function prepareTracks(oTracks, sIdPrefix) {
 	var iTrackId = 0;
-	var oDate = oInitialDate;
 	$.each(oTracks, function(sTrackIndex, oTrack){
 		$.each(oTrack, function(sTopicIndex, oTopic) {
 			oTopic.id = sIdPrefix + iTrackId++;
@@ -89,7 +90,6 @@ function updateHash() {
 		var oScrollState = $('html,body').scrollTop();
 		window.location.hash = sHash;
 		$('html,body').scrollTop(oScrollState);
-		//window.location.reload(true);
 	}
 	return sHash;
 }
@@ -103,8 +103,8 @@ function updatePage(sParam, sHash) {
 	updateBoothsView(sParam);
 	updateSpeakersView(sParam);
 	if(sHash) {
-		var top = $(sHash).position().top;
-		$(window).scrollTop( top );
+		var iTop = $(sHash).position().top;
+		$(window).scrollTop( iTop );
 	}
 }
 
@@ -150,7 +150,9 @@ function updateSpeakersView(sHash) {
 
 function fillTracksInfo() {
 	if( !bTracksLoaded ) {
-		fillTimeLine("timeLine-tracks");
+		oInitialDate.setHours(9);
+		oInitialDate.setMinutes(30);
+		fillTimeLine("timeLine-tracks", oInitialDate, 20);
 		fillTracks(oTracks);
 		bTracksLoaded = true;
 	}
@@ -158,7 +160,9 @@ function fillTracksInfo() {
 
 function fillBoothsInfo() {
 	if( !bBoothLoaded ) {
-		fillTimeLine("timeLine-booths");
+		oInitialDate.setHours(10);
+		oInitialDate.setMinutes(00);
+		fillTimeLine("timeLine-booths", oInitialDate, 17);
 		fillTracks(oBooths);
 		bBoothLoaded = true;
 	}
@@ -171,7 +175,7 @@ function fillSpeakersInfo() {
 	}
 }
 
-function fillTimeLine(sTimeLineId) {
+function fillTimeLine(sTimeLineId, oInitialDate, iCount) {
 	var oDate = oInitialDate;
 
 	var sTemplate = $("#timeline-item-template").html();
