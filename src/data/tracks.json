@@ -3,13 +3,13 @@
 		{
 			"title": "Opening",
 			"speaker": "Frederic Berg",
-			"type": "Session",
+			"type": "Key Note",
 			"duration": 20
 		},
 		{
 			"title": "UI5 News",
 			"speaker": "Stefan Beck",
-			"type": "session",
+			"type": "Key Note",
 			"duration": 30
 		},
 		{
@@ -19,7 +19,7 @@
 		{
 			"title": "UI5 Evolution – increase performance, fix architectural gaps, embrace technologies",
 			"speaker": "Peter Muessig, Andreas Ecker",
-			"type": "session",
+			"type": "Lecture",
 			"duration": 40
 		},
 		{
@@ -29,7 +29,7 @@
 		{
 			"title": " SAPUI5 on SAP HANA XSA - SAP Full-stack JavaScript Development",
 			"speaker": "HP Seitz",
-			"type": "session",
+			"type": "Lecture",
 			"duration": 40
 		},
 		{
@@ -39,7 +39,7 @@
 		{
 			"title": "Upcoming – UI5 OData V4 Model",
 			"speaker": "Patric Ksinsik, Thomas Chadzelek",
-			"type": "session",
+			"type": "Lecture",
 			"duration": 40
 		},
 		{
@@ -49,7 +49,7 @@
 		{
 			"title": "Simplify UI5 Tool Setup - One Node.js Module to Serve Them All",
 			"speaker": "Maximilian Lenkeit",
-			"type": "session",
+			"type": "Lecture",
 			"duration": 20
 		},
 		{
@@ -59,7 +59,7 @@
 		{
 			"title": "UI5Lab - Collaborators Wanted for a community-driven repository",
 			"speaker": "Michael Graf, Emanuele Ricci",
-			"type": "session",
+			"type": "Lecture",
 			"duration": 20
 		},
 		{
@@ -69,7 +69,7 @@
 		{
 			"title": "Mixed Reality with OpenUI5",
 			"speaker": "Dmitriy Buslov",
-			"type": "session",
+			"type": "Lecture",
 			"duration": 20
 		},
 		{
@@ -79,7 +79,7 @@
 		{
 			"title": "Building a companion conversational UI for a Fiori App",
 			"speaker": "Gregor Brett",
-			"type": "session",
+			"type": "Lecture",
 			"duration": 20
 		},
 		{
@@ -89,7 +89,7 @@
 		{
 			"title": "IoT full stack scenario",
 			"speaker": "Mateusz Skadorwa, Tomasz Wilk",
-			"type": "session",
+			"type": "Lecture",
 			"duration": 40
 		},
 		{
@@ -99,7 +99,7 @@
 		{
 			"title": "CI: Build process & automated testing of UI5 Apps",
 			"speaker": "Matthias Oßwald, Merlin Beutlberger",
-			"type": "session",
+			"type": "Lecture",
 			"duration": 40
 		},
 		{
@@ -109,7 +109,7 @@
 		{
 			"title": "Real-time Image Processing & Augmented Reality",
 			"speaker": "Volker Buzek",
-			"type": "session",
+			"type": "Lecture",
 			"duration": 20
 		},
 		{
@@ -119,7 +119,7 @@
 		{
 			"title": "From native Android to UI5",
 			"speaker": "Jan Zaruba, Tomas Krejci",
-			"type": "session",
+			"type": "Lecture",
 			"duration": 20
 		},
 		{
@@ -132,13 +132,13 @@
 		{
 			"title": " Opening (Broadcast)",
 			"speaker": "Frederic Berg",
-			"type": "session",
+			"type": "Key Note",
 			"duration": 20
 		},
 		{
 			"title": " UI5News (Broadcast)",
 			"speaker": "Stefan Beck",
-			"type": "session",
+			"type": "Key Note",
 			"duration": 30
 		},
 		{
@@ -148,7 +148,7 @@
 		{
 			"title": " Open-sourcing Offline UI5 apps",
 			"speaker": " Tom Van Doorslaer",
-			"type": "session",
+			"type": "Lecture",
 			"duration": 40
 		},
 		{
@@ -158,7 +158,7 @@
 		{
 			"title": " Plug in your feature into SAP Web IDE",
 			"speaker": " Wouter Lemaire, Vered Constantin",
-			"type": "session",
+			"type": "Lecture",
 			"duration": 40
 		},
 		{
@@ -168,7 +168,7 @@
 		{
 			"title": "Developing Custom ESLint Rules",
 			"speaker": "Alexander Flammer",
-			"type": "session",
+			"type": "Lecture",
 			"duration": 20
 		},
 		{
@@ -178,7 +178,7 @@
 		{
 			"title": " UI5 Supportability Reloaded",
 			"speaker": " Gergana Kremenska",
-			"type": "session",
+			"type": "Lecture",
 			"duration": 40
 		},
 		{
@@ -188,7 +188,7 @@
 		{
 			"title": " Working with PDFs in a (mobile) UI5 App",
 			"speaker": " Vincent Weiss",
-			"type": "session",
+			"type": "Lecture",
 			"duration": 20
 		},
 		{
@@ -198,7 +198,7 @@
 		{
 			"title": "UI5 Apps beyond the office",
 			"speaker": "Denny Schreber",
-			"type": "session",
+			"type": "Lecture",
 			"duration": 20
 		},
 		{
@@ -208,7 +208,7 @@
 		{
 			"title": "Controlling UI5 Apps and FLP via Speech",
 			"speaker": "Aparna Narayanaswamy",
-			"type": "session",
+			"type": "Lecture",
 			"duration": 20
 		},
 		{
@@ -218,7 +218,7 @@
 		{
 			"title": "A modern OpenUI5 app project boilerplate",
 			"speaker": "Michael Dell, Jascha Quintern",
-			"type": "session",
+			"type": "Lecture",
 			"duration": 40
 		},
 		{
@@ -228,7 +228,7 @@
 		{
 			"title": "Keep an eye on SAPUI5 Flexibility",
 			"speaker": "Alexander Rauh, Sebastian Wennemers",
-			"type": "session",
+			"type": "Lecture",
 			"duration": 40
 		},
 		{
@@ -238,7 +238,7 @@
 		{
 			"title": "Leveraging Service Workers",
 			"speaker": "Benedikt Schölch, Tobias Sorn",
-			"type": "session",
+			"type": "Lecture",
 			"duration": 20
 		},
 		{
@@ -248,7 +248,7 @@
 		{
 			"title": "UI5 Theming explained",
 			"speaker": "Alexander Flammer",
-			"type": "session",
+			"type": "Lecture",
 			"duration": 20
 		},
 		{
@@ -264,7 +264,7 @@
 		{
 			"title": "Write reliable application tests for your SAP UI5 application",
 			"speaker": " Maxim Naidenov",
-			"type": "session",
+			"type": "Hands-On",
 			"duration": 60
 		},
 		{
@@ -274,7 +274,7 @@
 		{
 			"title": "Writing a real time geolocation map using XMPPJSONPatchSyncModel and openlayers",
 			"speaker": "Manuel Blechschmidt",
-			"type": "session",
+			"type": "Hands-On",
 			"duration": 60
 		},
 		{
@@ -284,7 +284,7 @@
 		{
 			"title": "Functional Programming for your UI5 App",
 			"speaker": "DJ Adams",
-			"type": "session",
+			"type": "Hands-On",
 			"duration": 60
 		},
 		{
@@ -294,7 +294,7 @@
 		{
 			"title": "FLP meets SAPUI5 – extending the Fiori Launchpad",
 			"speaker": "Thilo Seidel",
-			"type": "session",
+			"type": "Hands-On",
 			"duration": 60
 		},
 		{
@@ -304,7 +304,7 @@
 		{
 			"title": "Fiori 2.0 for Your Application",
 			"speaker": "Stanislava Baltova, Yavor Ivanov",
-			"type": "session",
+			"type": "Hands-On",
 			"duration": 60
 		},
 		{
@@ -314,7 +314,7 @@
 		{
 			"title": "Getting started with UI5 on Cloud Foundry",
 			"speaker": "Frederic Berg",
-			"type": "session",
+			"type": "Hands-On",
 			"duration": 60
 		}
 	]

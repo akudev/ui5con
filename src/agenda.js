@@ -13,6 +13,14 @@ var TOPIC_TYPE_BREAK = "break";
 var DISPLAY_NONE_CSS = "display_none";
 var ACTIVE_BUTTON_CSS = "active";
 
+var SESSION_TYPE_KEYNOTE = "Key Note";
+var SESSION_TYPE_LECTURE = "Lecture";
+var SESSION_TYPE_HANSON = "Hands-On";
+var TYPE_KEYNOTE_CSS = "keynote";
+var TYPE_LECTURE_CSS = "lecture";
+var TYPE_HANSON_CSS = "handson";
+
+
 // init sessions start time
 var oInitialDate = new Date();
 oInitialDate.setHours(9);
@@ -319,6 +327,18 @@ function _createTopicContent(oTopic) {
 		sTemplate =  $("#break-item-template").html();
 	}
 	else {
+		var sTypeCss = "";
+		switch (oTopic.type) {
+			case SESSION_TYPE_KEYNOTE:
+				sTypeCss = TYPE_KEYNOTE_CSS;
+				break;
+			case SESSION_TYPE_LECTURE:
+				sTypeCss = TYPE_LECTURE_CSS;
+				break;
+			default:
+				sTypeCss = TYPE_HANSON_CSS;
+		}
+
 		sTitle = oTopic.title;
 		sTemplate = (iDuration == 20)
 			? $("#track-item-template-20").html()
@@ -327,6 +347,7 @@ function _createTopicContent(oTopic) {
 			.replace("{{trackId}}", oTopic.speaker + "@@||@@" + oTopic.title)
 			.replace("{{id}}", oTopic.id)
 			.replace("{{speaker}}", oTopic.speaker)
+			.replace("{{typeCss}}", sTypeCss)
 			.replace("{{type}}", oTopic.type);
 	}
 
