@@ -164,6 +164,7 @@
 			"title": "A hitchhiker‘s guide to the UI5 demo apps & tutorials",
 			"speaker": "Elena Makarenko",
 			"type": "Session",
+			"abstract": "There are many hidden gems waiting to be discovered in our demo kit and we consistently update our demo apps and tutorials to reflect the latest recommendations of the UI5 framework. See how you can quickly get up to speed and where to find essential features that you can re-use in your application projects. Enjoy a free tour across our Demo Apps, Tools, Templates, and Tutorials to find out the true meaning of code, the UI5verse, and everything.",
 			"duration": 40
 		},
 		{

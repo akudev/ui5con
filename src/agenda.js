@@ -340,18 +340,23 @@ function _createTopicContent(oTopic) {
 		sTemplate =  $("#break-item-template").html();
 	}
 	else {
-		//if()
-		var sTypeCss = "";
+		if(oTopic.abstract && oTopic.abstract.length > 0)
+		{
+			sTemplate = (iDuration == 20)
+				? $("#track-item-template-20").html()
+				: $("#track-item-template").html()
+		}
+		else {
+			sTemplate = (iDuration == 20)
+				? $("#track-item-no-details-template-20").html()
+				: $("#track-item-no-details-template").html()
+		}
 
 		sTitle = oTopic.title;
-		sTemplate = (iDuration == 20)
-			? $("#track-item-template-20").html()
-			: $("#track-item-template").html() ;
 		sTemplate = sTemplate
 			.replace("{{trackId}}", oTopic.speaker + "@@||@@" + oTopic.title)
 			.replace("{{id}}", oTopic.id)
 			.replace("{{speaker}}", oTopic.speaker)
-			.replace("{{typeCss}}", sTypeCss)
 			.replace("{{type}}", oTopic.type);
 	}
 
