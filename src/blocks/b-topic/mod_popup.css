@@ -1,0 +1,31 @@
+.b-topic.mod_popup {
+	height: auto;
+	padding-bottom: 55px;
+	background: #e9e9e9;
+}
+
+.b-topic.mod_popup .b-topic__title_block  {
+	margin-bottom: 50px;
+}
+
+.b-topic.mod_popup .column_1 {
+	max-width: 72%;
+}
+
+.b-topic.mod_popup .column_3 {
+	max-width: 25%;
+}
+
+.b-topic__abstract {
+	clear: both;
+}
+
+@media (max-width: 700px) {
+	.b-popup__content {
+		height: 90%;
+		width: 90%;
+		position: fixed;
+		top: 5%;
+		left: 5%;
+	}
+}

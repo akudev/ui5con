@@ -30,6 +30,7 @@ $(document).ready(function() {
 
 	prepareTracks(oTracks, "s_");
 	prepareTracks(oBooths, "b_");
+	prepareSpeakers();
 	var sHash = getUrlParameter(VIEW_PARAMETER) || TRACKS_HASH;
 	updatePage(sHash, window.location.hash);
 
@@ -41,6 +42,7 @@ $(document).ready(function() {
 	});
 	// close popup on block layer click
 	$('#popupBlocklayer').click(closePopup);
+	$('#popup').click(closePopup);
 });
 
 $(window).bind( "hashchange", function() {
@@ -63,6 +65,13 @@ function prepareTracks(oTracks, sIdPrefix) {
 		$.each(oTrack, function(sTopicIndex, oTopic) {
 			oTopic.id = sIdPrefix + iTrackId++;
 		} );
+	});
+}
+
+function prepareSpeakers() {
+	var iSpeakerId = 0;
+	$.each(oSpeakers, function(sIndex, oSpeaker) {
+		oSpeaker.id = "sp_" + iSpeakerId++;
 	});
 }
 
@@ -234,6 +243,7 @@ function createSpeakersViewContent() {
 			var sSessionTitle = oSession ? oSession.title : "";
 			var sCompany = oSpeaker.company || "";
 			var oSpeakerItem = sSpeakerTemplate
+				.replace("{{id}}", oSpeaker.id)
 				.replace("{{name}}", oSpeaker.name)
 				.replace("{{bio}}", oSpeaker.bio)
 				.replace("{{company}}", sCompany)
@@ -433,7 +443,16 @@ window.showPopup = function (sId) {
 	var aSegments = sId.split("@@||@@");
 	var oDetailTopic = null;
 	var oDate = oInitialDate;
+	var oSpeaker = null;
 	var oAllTracks = Object.assign(oTracks, oBooths);
+
+	$.each(oSpeakers, function (sIndex, oSpeakerItem) {
+
+		if(oSpeakerItem.name.toUpperCase() == aSegments[0].toUpperCase()) {
+			oSpeaker = oSpeakerItem;
+			return false;
+		}
+	});
 
 	$.each(oAllTracks, function(sTrackIndex, aTopics) {
 		if (!oDetailTopic) {
@@ -455,12 +474,24 @@ window.showPopup = function (sId) {
 		return;
 	}
 
+	// prepare speakers names in case of 2 or more names
+	var sSpeakersHtml = oDetailTopic.speaker;
+	var aSpeakers = sSpeakersHtml.split(",");
+	if(aSpeakers.length > 1) {
+		sSpeakersHtml = aSpeakers.map(function (sSpeaker) {
+			return sSpeaker.trim();
+		}).join("<br>");
+	}
+
 	var oEndDate = _addMinutes(oDate, oDetailTopic.duration);
 	var sTime = _getTimeSpanAsString(oDate, oEndDate);
 
 	var sTemplate = $("#session-detail-template").html();
 	sTemplate = sTemplate.replace("{{title}}", oDetailTopic.title)
-		.replace("{{speaker}}", oDetailTopic.speaker)
+		.replace("{{speaker_id}}", oSpeaker ? oSpeaker.id : "")
+		.replace("{{abstract}}", oDetailTopic.abstract)
+		.replace("{{speaker}}", sSpeakersHtml)
+		.replace("{{picture}}", oSpeaker ? oSpeaker.picture : "")
 		.replace("{{type}}", oDetailTopic.type)
 		.replace("{{time}}", sTime);
 
@@ -483,7 +514,6 @@ function openPopup(sContent) {
 		top: $("body").scrollTop() + $(window).height()/2 - popupHeight/2,
 		left: $(window).width()/2 - Math.min(800, $(window).width())/2,
 	});
-	$('#popupBlocklayer').css("top", ($("body").scrollTop()));
 }
 
 window.closePopup = function () {

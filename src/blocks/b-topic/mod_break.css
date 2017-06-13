@@ -1,22 +1,4 @@
 /* b-topic */
-.b-topic {
-	position: relative;
-	padding: 25px;
-	text-align: left;
-	height: 230px;
-	margin: 10px;
-}
-
-.b-topic__format {
-	position: absolute;
-	bottom: 25px;
-	right: 25px;
-}
-.b-topic__time {
-	position: absolute;
-	bottom: 25px;
-	left: 25px;
-}
 
 .b-topic.mod_break:before {
 	position: absolute;
