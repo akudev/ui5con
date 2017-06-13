@@ -199,5 +199,11 @@
 		"bio": "Bin seit 20 Jahren bei der SAP – HR Entwicklung Landesversionen Südafrika und Großbritannien, Industry Public Services Entwicklung (Campus Management und Records Management). Seit 2015 bei Global Design, hauptsächlich mit UI5 in der „Reference Apps“. In der Reference Apps bauen wir, für sowohl für intern- als extern zweck, reference – artige App, die als Beispiel Implementierung diene.",
 		"picture": "IanRobertTaylor.jpg",
 		"company": "SAP"
+	},
+	{
+		"name": "Elena Makarenko",
+		"bio": "I'm a SAPUI5 Developer, keen on User Centered Design, focused on creating a great user experience.",
+		"picture": "ElenaMakarenko.jpg",
+		"company": "SAP"
 	}
 ]
