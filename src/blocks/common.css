@@ -71,7 +71,7 @@ dl, ul, ol {
 ul li,
 ol li {
     vertical-align: top;
-    list-style: none;
+    margin-left: 17px;
 }
 a img {
     border: 0;
