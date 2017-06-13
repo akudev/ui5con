@@ -123,12 +123,13 @@ b {
 }
 
 a {
-    color: #ff5743;
-    text-decoration: underline;
+    color: #ffa242;
+    text-decoration: none;
     transition: color .3s ease;
 }
 a:hover {
-    color: #ffa242;
+    color: #ff5743;
+    text-decoration: underline;
 }
 
 .flex-container {
@@ -199,6 +200,7 @@ a:hover {
 .eveningSectionTitle {
     margin-top: 30px;
 }
+
 #hideButton {
     margin: 20px auto 0 auto;
     width:50px;

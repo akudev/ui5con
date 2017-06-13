@@ -13,14 +13,6 @@ var TOPIC_TYPE_BREAK = "break";
 var DISPLAY_NONE_CSS = "display_none";
 var ACTIVE_BUTTON_CSS = "active";
 
-var SESSION_TYPE_KEYNOTE = "Key Note";
-var SESSION_TYPE_LECTURE = "Lecture";
-var SESSION_TYPE_HANSON = "Hands-On";
-var TYPE_KEYNOTE_CSS = "keynote";
-var TYPE_LECTURE_CSS = "lecture";
-var TYPE_HANSON_CSS = "handson";
-
-
 // init sessions start time
 var oInitialDate = new Date();
 oInitialDate.setHours(9);
@@ -298,14 +290,35 @@ function prepareSpeakersInfo() {
 	oSpeakers = $(oSpeakers).sort(function(oSpeaker1, oSpeaker2) {
 		var sComp1 = oSpeaker1.name.toUpperCase();
 		var sComp2 = oSpeaker2.name.toUpperCase();
-		return sComp1.localeCompare(sComp2);
+		var aName1 = sComp1.split([' ']);
+		var aName2 = sComp2.split([' ']);
+
+		if(aName1.length < 1) {
+			aName1.push("");
+		}
+
+		if(aName1.length < 2) {
+			aName1.push(aName1[0]);
+		}
+
+		if(aName2.length < 1) {
+			aName2.push("");
+		}
+
+		if(aName2.length < 2) {
+			aName2.push(aName2[0]);
+		}
+
+		// Compare the surnames first, than names
+		return aName1[1].localeCompare(aName2[1])
+			|| aName1[0].localeCompare(aName2[0]);
 	});
 
 	var oSortedSpeakersInfo = {};
 	$.each(oSpeakers, function(oIndex, oSpeaker){
 
-		// Classify a speaker simply by the first letter of his name
-		var sLetter = oSpeaker.name.trim().substring(0, 1);
+		// Classify a speaker simply by the first letter of a surname
+		var sLetter = oSpeaker.name.trim().split([' '])[1].substring(0, 1);
 		if(!oSortedSpeakersInfo[sLetter]) {
 			oSortedSpeakersInfo[sLetter] = [];
 		}
@@ -327,17 +340,8 @@ function _createTopicContent(oTopic) {
 		sTemplate =  $("#break-item-template").html();
 	}
 	else {
+		//if()
 		var sTypeCss = "";
-		/*switch (oTopic.type) {
-			case SESSION_TYPE_KEYNOTE:
-				sTypeCss = TYPE_KEYNOTE_CSS;
-				break;
-			case SESSION_TYPE_LECTURE:
-				sTypeCss = TYPE_LECTURE_CSS;
-				break;
-			case SESSION_TYPE_HANSON:
-				sTypeCss = TYPE_HANSON_CSS;
-		}*/
 
 		sTitle = oTopic.title;
 		sTemplate = (iDuration == 20)

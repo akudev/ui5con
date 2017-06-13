@@ -5,10 +5,5 @@
 }
 
 .b-list.mod_download .b-list__item a {
-	text-decoration: none;
 	padding: 10px;
-}
-
-.b-list.mod_download .b-list__item a:hover {
-	text-decoration: underline;
 }

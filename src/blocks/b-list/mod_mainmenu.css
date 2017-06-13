@@ -6,14 +6,6 @@
 	justify-content: center;
 }
 
-.b-list.mod_mainmenu .b-list__item a {
-	text-decoration: none;
-}
-
-.b-list.mod_mainmenu .b-list__item a:hover {
-	text-decoration: underline;
-}
-
 @media (max-width: 980px) {
 	.b-list.mod_mainmenu .b-list__item {
 		padding: 10px 20px;
