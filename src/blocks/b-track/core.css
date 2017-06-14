@@ -15,6 +15,9 @@
 	.b-track__item.duration_10 {
 		height: 70px;
 	}
+		.b-track__item.duration_10 .b-topic__time {
+			display: none;
+		}
 
 	.b-track__item.duration_20 {
 		height: 140px;

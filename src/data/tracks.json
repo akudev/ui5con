@@ -147,8 +147,14 @@
 			"abstract":"Movement from native Android to UI5 in order to show the way over hybrid application with Cordova using native business logic. Problems, learnings and outlook to move it to JS."
 		},
 		{
-			"title": "Closing words",
 			"type": "break",
+			"duration": 10,
+			"abstract":""
+		},
+		{
+			"title": "Closing words",
+			"speaker": "",
+			"type": "",
 			"duration": 10,
 			"abstract":""
 		}
