@@ -2,8 +2,6 @@ var oTracks = require('./data/tracks.json');
 var oBooths = require('./data/booths.json');
 var oSpeakers = require('./data/speakers.json');
 
-var MINUTE_HEIGHT = 1; //px
-
 var VIEW_PARAMETER = "view";
 var TRACKS_HASH = "tracks";
 var BOOTHS_HASH = "showfloor";
@@ -23,16 +21,14 @@ var bBoothLoaded = false;
 var bSpeakersLoaded = false;
 
 var oStartDate;
-var sCurrentMode = TRACKS_HASH;
-
 
 $(document).ready(function() {
-
 	prepareTracks(oTracks, "s_");
 	prepareTracks(oBooths, "b_");
 	prepareSpeakers();
-	var sHash = getUrlParameter(VIEW_PARAMETER) || TRACKS_HASH;
-	updatePage(sHash, window.location.hash);
+
+	var sViewName = getUrlParameter(VIEW_PARAMETER) || TRACKS_HASH;
+	updatePage(sViewName, window.location.hash);
 
 	// close popup on escape key
 	$(document).keyup(function(e){
@@ -69,6 +65,9 @@ function prepareTracks(oTracks, sIdPrefix) {
 	});
 }
 
+/*
+ * Initializes id properties of each speaker entity
+ */
 function prepareSpeakers() {
 	var iSpeakerId = 0;
 	$.each(oSpeakers, function(sIndex, oSpeaker) {
@@ -79,11 +78,13 @@ function prepareSpeakers() {
 /*
  * Updates page layout according to the actual hash.
  * The respective view becomes visible, other - hidden.
+ * @param {string} sActiveView The view to be activated
+ * @param {string} sHash Hash of the current URL
  */
-function updatePage(sParam, sHash) {
-	updateTracksView(sParam);
-	updateBoothsView(sParam);
-	updateSpeakersView(sParam);
+function updatePage(sActiveView, sHash) {
+	updateTracksView(sActiveView);
+	updateBoothsView(sActiveView);
+	updateSpeakersView(sActiveView);
 	if(sHash) {
 		var iTop = $(sHash).offset().top;
 		$(window).scrollTop( iTop );
@@ -284,19 +285,19 @@ function prepareSpeakersInfo() {
 		var aName1 = sComp1.split([' ']);
 		var aName2 = sComp2.split([' ']);
 
-		if(aName1.length < 1) {
-			aName1.push("");
-		}
-
+		// prepare 1st speaker's for comparing
 		if(aName1.length < 2) {
+			if(aName1.length < 1) {
+				aName1.push("");
+			}
 			aName1.push(aName1[0]);
 		}
 
-		if(aName2.length < 1) {
-			aName2.push("");
-		}
-
+		// prepare 2nd speaker's for comparing
 		if(aName2.length < 2) {
+			if(aName2.length < 1) {
+				aName2.push("");
+			}
 			aName2.push(aName2[0]);
 		}
 
