@@ -46,6 +46,7 @@ $(document).ready(function() {
 });
 
 $(window).bind( "hashchange", function() {
+	var sHash = window.location.hash.split("#")[1];
 	if(sHash) {
 		var iTop = $(sHash).position().top;
 		$(window).scrollTop( iTop );
@@ -445,10 +446,11 @@ window.showPopup = function (sId) {
 	var oDate = oInitialDate;
 	var oSpeaker = null;
 	var oAllTracks = Object.assign(oTracks, oBooths);
+	var sSpeakerName = aSegments[0].trim().toUpperCase();
 
 	$.each(oSpeakers, function (sIndex, oSpeakerItem) {
 
-		if(oSpeakerItem.name.toUpperCase() == aSegments[0].toUpperCase()) {
+		if(oSpeakerItem.name.trim().toUpperCase() == aSegments[0].toUpperCase()) {
 			oSpeaker = oSpeakerItem;
 			return false;
 		}
