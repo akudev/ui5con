@@ -2,7 +2,7 @@
 	"booth1": [
 		{
 			"type": "break",
-			"duration": 10
+			"duration": 50
 		},
 		{
 			"title": "Metadata-Driven Controls with Rest Services",
@@ -32,7 +32,7 @@
 		},
 		{
 			"type": "break",
-			"duration": 60
+			"duration": 50
 		},
 		{
 			"title": "SEO for OpenUI5 Apps",
@@ -88,7 +88,7 @@
 	"booth2": [
 		{
 			"type": "break",
-			"duration": 10
+			"duration": 50
 		},
 		{
 			"title": "Behavior-Driven Development with OPA5 automated tests",
@@ -118,7 +118,7 @@
 		},
 		{
 			"type": "break",
-			"duration": 60
+			"duration": 50
 		},
 		{
 			"title": "Virtual Tour around a Company Site with UI5",
@@ -131,8 +131,8 @@
 			"duration": 10
 		},
 		{
-			"title": "Easy integrations with UI5",
-			"speaker": "Meredith Hassett",
+			"title": "Teaser: Implementing Custom Tiles for SAP Fiori Launchpad as SAPUI5 Components",
+			"speaker": "Stephan Heyne",
 			"type": "Session",
 			"duration": 40
 		},

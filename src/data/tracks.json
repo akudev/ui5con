@@ -11,7 +11,7 @@
 			"title": "UI5 News",
 			"speaker": "Stefan Beck",
 			"type": "Key Note",
-			"duration": 30,
+			"duration": 40,
 			"abstract":"<p>like the &quot;news around UI5 that you absolutely have to know&quot;-session from dkom adapted to the current product status</p>"
 		},
 		{
@@ -20,7 +20,7 @@
 			"abstract":""
 		},
 		{
-			"title": "UI5 Evolution – increase performance, fix architectural gaps, embrace technologies",
+			"title": "UI5 Evolution – performance, architecture, trends",
 			"speaker": "Peter Muessig, Andreas Ecker",
 			"type": "Lecture",
 			"duration": 40,
@@ -56,7 +56,7 @@
 			"abstract":""
 		},
 		{
-			"title": "Simplify UI5 Tool Setup - One Node.js Module to Serve Them All",
+			"title": "Easy integrations with UI5",
 			"speaker": "Maximilian Lenkeit",
 			"type": "Lecture",
 			"duration": 20,
@@ -68,7 +68,7 @@
 			"abstract":""
 		},
 		{
-			"title": "UI5Lab - Collaborators Wanted for a community-driven repository",
+			"title": "Collaborators wanted for UI5Lab - a Custom UI5 Repo",
 			"speaker": "Michael Graf, Emanuele Ricci",
 			"type": "Lecture",
 			"duration": 20,
@@ -165,7 +165,7 @@
 			"title": " UI5News (Broadcast)",
 			"speaker": "Stefan Beck",
 			"type": "Key Note",
-			"duration": 30,
+			"duration": 40,
 			"abstract":"<p>like the &quot;news around UI5 that you absolutely have to know&quot;-session from dkom adapted to the current product status</p>"
 		},
 		{
@@ -296,7 +296,7 @@
 		},
 		{
 			"title": "UI5 Theming explained",
-			"speaker": "Alexander Flammer",
+			"speaker": "Matthias Oßwald",
 			"type": "Lecture",
 			"duration": 20,
 			"abstract":"<p>Get a deep dive into how theming in UI5 works and how to easily build your own themes.</p><p>This includes</p><ul>  <li>Introduction into Less.js</li>  <li>Theme structure and extension</li>  <li>Usage of Node.js based build tools to compile custom themes</li></ul>"
@@ -326,7 +326,7 @@
 			"abstract":""
 		},
 		{
-			"title": "Writing a real time geolocation map using XMPPJSONPatchSyncModel and openlayers",
+			"title": "Writing a real-time geolocation map with OpenLayers 3",
 			"speaker": "Manuel Blechschmidt",
 			"type": "Hands-On",
 			"duration": 60,
