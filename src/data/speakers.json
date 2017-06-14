@@ -41,7 +41,8 @@
 		"bio": "Lead Architect, User Interface Core Services",
 		"company": "SAP",
 		"session": "Add session title here",
-		"picture": "MartinSchaus.png"
+		"picture": "MartinSchaus.png",
+		"meetMe": "15:40"
 	},
 	{
 		"name": "Stanislava Baltova",
@@ -86,7 +87,8 @@
 		"bio": "Michael is product owner at SAP and OpenUI5 enthusiast. His passion is developing desirable UIs and working with web technologies. He also loves getting in touch with the community and evangelizing technology. Follow him here or on @Twitter",
 		"picture": "MichaelGraf.png",
 		"company": "SAP",
-		"session": "Add session title here"
+		"session": "Add session title here",
+		"meetMe": "16:30"
 	},
 	{
 		"name": "HP Seitz",
@@ -110,14 +112,15 @@
 		"name": "Thomas Chadzelek",
 		"bio": "Dr. Thomas Chadzelek has been with SAP since the last millennium, first working on UIs in Java, then contributing to the Web Dynpro for Java framework and now to OpenUI5. He holds a PhD in Computer Science from University of Saarbrücken.",
 		"picture": "ThomasChadzelek.jpg",
-		"company": "SAP"
+		"company": "SAP",
+		"meetMe": "14:00"
 	},
 	{
 		"name": "Andreas Kunz",
 		"bio": "Andreas is an area architect within SAPUI5 development, with a special passion for the open source variant OpenUI5. He has been with UI5 from day one, in changing roles, and spoken at the first UI5con 2016 as well as other conferences like OSCON, Fluent, and SAP TechEd.",
 		"picture": "Andreas-openSAP-small.jpg",
 		"company": "SAP",
-		"meetMe": "14:30"
+		"meetMe": "16:30"
 	},
 	{
 		"name": "Benedikt Schölch",
@@ -161,7 +164,8 @@
 		"bio": "Chief Product Owner for SAPUI5 and OpenUI5.",
 		"picture": "StefanBeck.jpg",
 		"company": "SAP",
-		"session": "Add session title here"
+		"session": "Add session title here",
+		"meetMe": "10:50"
 	},
 	{
 		"name": "Savio Dimatteo",
@@ -192,7 +196,8 @@
 		"name": "Meredith Hassett",
 		"bio": "Meredith Hassett is a Developer Evangelist on the Developer Relations team at SAP from the San Francisco Bay Area. She enjoys building (and writing about building) with UI5 and APIs, and dabbling in IoT. Her life goal is to show the world how easy it is to build a good looking integrated application, and to become a social media celebrity. When she’s not running off to events around the world, Meredith enjoys hiking, photography, and inspiring young minds through volunteer programs.",
 		"picture": "MeredithHsset.jpg",
-		"company": "SAP"
+		"company": "SAP",
+		"meetMe": "14:50"
 	},
 	{
 		"name": "Ian Robert Taylor",
