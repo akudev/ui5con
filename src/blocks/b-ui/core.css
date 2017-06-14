@@ -16,10 +16,14 @@
 .b-ui.margin_20 {
     margin-bottom: 20px;
     }
+
 .b-ui.margin_10 {
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     }
 
+.b-ui.margin_15 {
+    margin-bottom: 15px;
+}
 .b-ui.margin_5 {
     margin-bottom: 5px;
 }
@@ -32,8 +36,8 @@
     margin-right: 10px;
 }
 
-.b-ui.margin_right_15 {
-    margin-right: 15px;
+.b-ui.margin_right_20 {
+    margin-right: 20px;
 }
 
 .b-ui.text-align_left {

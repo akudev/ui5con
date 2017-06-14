@@ -21,18 +21,18 @@
 		<div class="b-section">
 			<div class="b-list mod_mainmenu">
 				<div class="b-list__item">
-					<div class="b-font size_18 color_yellow">
+					<div class="b-font size_18">
 						<a href="index.html#section-info">INFO</a>
 					</div>
 				</div>
 				<div class="b-list__item">
-					<div class="b-font size_18 color_yellow">
-						<a href="index.html#section-what-where">WHAT & WHERE?</a>
+					<div class="b-font size_18">
+						<a href="index.html#section-what-where">WHAT & WHERE</a>
 					</div>
 				</div>
 				<div class="b-list__item">
-					<div class="b-font size_18 color_yellow">
-						<a href="agenda.html#tracks">AGENDA</a>
+					<div class="b-font size_18">
+						<a href="agenda.html#tracks" class="active">AGENDA</a>
 					</div>
 				</div>
 			</div>
@@ -64,7 +64,7 @@
 						<div class="b-list__item">
 							<button
 								id="tracks"
-								class="b-list__button b-font size_18 color_red"
+								class="b-list__button b-font size_18 color_yellow"
 								title="Tracks"
 								onclick="switchAgenda('tracks');">
 								Tracks
@@ -73,7 +73,7 @@
 						<div class="b-list__item">
 							<button
 								id="showfloor"
-								class="b-list__button b-font size_18 color_red"
+								class="b-list__button b-font size_18 color_yellow"
 								title="Showfloor"
 								onclick="switchAgenda('showfloor');">
 								Showfloor
@@ -82,7 +82,7 @@
 						<div class="b-list__item">
 							<button
 								id="speakers"
-								class="b-list__button b-font size_18 color_red"
+								class="b-list__button b-font size_18 color_yellow"
 								title="Speakers"
 								onclick="switchAgenda('speakers');">
 								Speakers
@@ -177,7 +177,7 @@
 	<script id="speaker-item-template" type="text/template">
 		<div class="b-list__item">
 			<div class="b-topic mod_speaker" id="{{id}}">
-				<div class="b-topic__title_block  b-ui margin_10">
+				<div class="b-topic__title_block  b-ui margin_15">
 					<div class="b-topic__title b-font size_15 color_white b-ui margin_right_10 column_1">
 						{{name}}
 					</div>
@@ -193,7 +193,7 @@
 					</div>
 				</div>
 				<div class="flex-container b-topic__content mod_speaker">
-					<div class="b-topic__image-column fix-item b-ui margin_right_15">
+					<div class="b-topic__image-column fix-item b-ui margin_right_20">
 						<div
 							class="b-topic__picture"
 							style="background-image:url('src/data/pictures/{{picture}}');">
@@ -234,17 +234,17 @@
 			</div>
 			<div id="track1" class="b-track">
 				<div class="b-track__header b-font size_15 color_white b-ui">
-					Track A
+					Room A
 				</div>
 			</div>
 			<div id="track2" class="b-track">
 				<div class="b-track__header b-font size_15 color_white b-ui">
-					Track B
+					Room B
 				</div>
 			</div>
 			<div id="track3" class="b-track">
 				<div class="b-track__header b-font size_15 color_white b-ui">
-					Track C
+					Room C
 				</div>
 			</div>
 		</div>

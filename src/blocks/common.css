@@ -122,14 +122,44 @@ b {
     font-weight: bold;
 }
 
+/* TODO: refactor styles for links! */
 a {
     color: #ffa242;
     text-decoration: none;
     transition: color .3s ease;
 }
-a:hover {
+
+.b-list.mod_mainmenu a.active {
+    color: #ff5743;
+    text-decoration: none;
+    transition: color .3s ease;
+}
+
+.b-topic.mod_popup .b-topic__title a {
+    color: #161413;
+}
+
+.b-topic__title a {
+    color: #ffffff;
+}
+
+.b-list.mod_mainmenu a {
+    color: #78787e;
+}
+
+a:hover,
+.b-topic.mod_popup .b-topic__title a:hover,
+.b-list.mod_mainmenu a:hover,
+.b-topic__title a:hover {
     color: #ff5743;
     text-decoration: underline;
+}
+
+
+
+
+.b-topic__title a {
+    color: #ffffff;
 }
 
 .flex-container {

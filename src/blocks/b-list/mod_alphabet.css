@@ -1,9 +1,10 @@
-.b-list.mod_alphabet .b-list__item {
-	padding: 15px 20px;
-}
-
 .b-list.mod_alphabet {
 	justify-content: center;
+	margin-bottom: 10px;
+}
+
+.b-list.mod_alphabet .b-list__item {
+	padding: 15px 20px;
 }
 
 @media (max-width: 980px) {

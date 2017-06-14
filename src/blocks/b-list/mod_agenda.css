@@ -21,7 +21,7 @@
 }
 
 .b-list__button.active {
-	color: #ffa242;
+	color: #ff5743;
 }
 
 @media (max-width: 700px) {
