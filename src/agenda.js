@@ -48,7 +48,7 @@ $(document).ready(function() {
 $(window).bind( "hashchange", function() {
 	var sHash = window.location.hash.split("#")[1];
 	if(sHash) {
-		var iTop = $(sHash).position().top;
+		var iTop = $(sHash).offset().top;
 		$(window).scrollTop( iTop );
 	}
 });
@@ -77,26 +77,6 @@ function prepareSpeakers() {
 }
 
 /*
- * Ensures the hash is valid and updates it.
- * Default hash value - 'tracks'
- */
-function updateHash() {
-	var sHash = window.location.hash.split("#")[1];
-	sHash = _verifyHash(sHash);
-
-	// if no hash defined - set #tracks as default.
-	if(!sHash) {
-		sHash = TRACKS_HASH;
-
-		// prevent scrolling
-		var oScrollState = $('html,body').scrollTop();
-		window.location.hash = sHash;
-		$('html,body').scrollTop(oScrollState);
-	}
-	return sHash;
-}
-
-/*
  * Updates page layout according to the actual hash.
  * The respective view becomes visible, other - hidden.
  */
@@ -105,7 +85,7 @@ function updatePage(sParam, sHash) {
 	updateBoothsView(sParam);
 	updateSpeakersView(sParam);
 	if(sHash) {
-		var iTop = $(sHash).position().top;
+		var iTop = $(sHash).offset().top;
 		$(window).scrollTop( iTop );
 	}
 }
@@ -425,16 +405,6 @@ function _addMinutes(date, minutes) {
 
 function _getTimeSpanAsString( oDateStart, oDateEnd) {
 	return oDateStart.toTimeString().substring(0,5) + " - " + oDateEnd.toTimeString().substring(0,5);
-}
-
-function _verifyHash(sHash) {
-	if(sHash) {
-		sHash = sHash.toLowerCase();
-		if((sHash == TRACKS_HASH || sHash == BOOTHS_HASH || sHash == SPEAKERS_HASH)){
-			return sHash;
-		}
-	}
-	return null;
 }
 
 /** popup functions **/
