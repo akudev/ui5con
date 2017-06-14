@@ -8,7 +8,7 @@
 			"abstract":""
 		},
 		{
-			"title": "UI5 News",
+			"title": "News around UI5 that you absolutely have to know",
 			"speaker": "Stefan Beck",
 			"type": "Key Note",
 			"duration": 40,
@@ -161,14 +161,14 @@
 	],
 	"track2": [
 		{
-			"title": " Opening (Broadcast)",
+			"title": "Opening (Broadcast)",
 			"speaker": "Frederic Berg",
 			"type": "",
 			"duration": 20,
 			"abstract":""
 		},
 		{
-			"title": " UI5News (Broadcast)",
+			"title": "News around UI5 that you absolutely have to know (Broadcast)",
 			"speaker": "Stefan Beck",
 			"type": "Key Note",
 			"duration": 40,
