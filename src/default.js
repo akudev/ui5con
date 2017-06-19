@@ -23,10 +23,10 @@ window.initMap = function () {
 
     new google.maps.Marker({
         position: {
-            lat: 49.241254, // original center - 49.240850
-            lng: 8.639473,
+            lat: 49.241254, /* original center - 49.240850 */
+            lng: 8.639473
         },
-        map,
+        map: map,
         clickable: false,
         icon: markerImg
     });
