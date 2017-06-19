@@ -384,7 +384,7 @@ function addOrReplaceUrlParameter(sParam, sNewData) {
 	var sStringToAdd = sParam + "=" + sNewData;
 
 	if (window.location.search == "")
-		return window.location.href + sStringToAdd;
+		return window.location.href + "?" + sStringToAdd;
 
 	if (window.location.search.indexOf(sParam +'=') == -1)
 		return window.location.href + sStringToAdd;
