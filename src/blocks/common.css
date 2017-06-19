@@ -141,11 +141,12 @@ a {
 
 .b-topic__title a {
     color: #ffffff;
+    text-decoration: underline;
 }
 
-.b-list.mod_mainmenu a {
+/*.b-list.mod_mainmenu a {
     color: #78787e;
-}
+}*/
 
 a:hover,
 .b-topic.mod_popup .b-topic__title a:hover,

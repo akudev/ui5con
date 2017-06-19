@@ -150,8 +150,8 @@ function fillTracksInfo() {
 function fillBoothsInfo() {
 	if( !bBoothLoaded ) {
 		oInitialDate.setHours(10);
-		oInitialDate.setMinutes(00);
-		fillTimeLine("timeLine-booths", oInitialDate, 18);
+		oInitialDate.setMinutes(30);
+		fillTimeLine("timeLine-booths", oInitialDate, 17);
 		fillTracks(oBooths);
 		bBoothLoaded = true;
 	}

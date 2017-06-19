@@ -134,7 +134,7 @@
 
 @media (max-width: 390px) {
 	.b-header {
-		height: 700px;
+		height: 756px;
 	}
 
 	.b-header__logo {
@@ -145,7 +145,7 @@
 
 	.b-header__footer {
 		margin-top: 30px;
-		height: 340px;
+		height: 320px;
 	}
 
 	.b-header__delimiter {
