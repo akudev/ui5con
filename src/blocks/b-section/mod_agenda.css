@@ -10,10 +10,28 @@
 	right: 0;
 }
 
+@media (min-width: 701px) and (max-width: 1210px) {
+	.b-section-download {
+		padding-right: 30px;
+	}
+}
+
 @media (max-width: 700px) {
 	.b-section-download {
 		position: inherit;
 		top: auto;
 		right: auto;
+	}
+}
+
+@media (max-width: 390px) {
+	.b-section.mod_agenda {
+		overflow-x: scroll;
+	}
+}
+
+@media (min-width: 391px) and (max-width: 900px) {
+	.b-section-download {
+		padding-right: 10px;
 	}
 }
