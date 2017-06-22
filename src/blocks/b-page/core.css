@@ -2,13 +2,16 @@
 .b-page {
     min-height: 100%;
     position: relative;
-    overflow: hidden;
     }
 
+@media (min-width: 391px) and (max-width: 1025px) {
+    .b-page {
+        min-width: 660px;
+    }
+}
 
 @media (max-width: 390px) {
     .b-page {
-        /*min-width: 360px;*/
         overflow: scroll;
         }
 }
