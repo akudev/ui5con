@@ -1,5 +1,5 @@
 .b-header.mod_agenda {
-	height: 320px ;
+	height: 320px;
 	position: relative;
 	overflow: hidden;
 	background: url('background.jpg') no-repeat 50% 50%;
@@ -28,6 +28,10 @@
 }
 
 @media (max-width: 700px) {
+	.b-header.mod_agenda {
+		height: 370px;
+	}
+	
 	.b-header.mod_agenda .b-header__footer {
 		height: 185px;
 	}

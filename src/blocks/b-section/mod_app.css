@@ -1,0 +1,108 @@
+/* mod_app */
+
+.b-section-app {
+	position: absolute;
+	top: 0;
+	left: 0;
+	cursor: pointer;
+}
+
+#app-download:hover  > div {
+	text-decoration: underline;
+}
+
+@media (min-width: 701px) and (max-width: 1210px) {
+	.b-section-app {
+		padding-left: 30px;
+	}
+}
+
+@media (max-width: 700px) {
+	.b-section-app {
+		position: inherit;
+		top: auto;
+		left: auto;
+	}
+}
+
+@media (min-width: 391px) and (max-width: 900px) {
+	.b-section-app {
+		padding-bottom: 12px;
+	}
+}
+
+.b-topic.mod_popup.mod_app {
+	max-height: 100%;
+	overflow-y: auto;
+	box-sizing: border-box;
+	padding-bottom: 25px;
+}
+
+.mod_app .mod_app_scrollcontent {
+	position: relative;
+	padding-bottom: 230px;
+}
+
+.b-topic.mod_popup.mod_app:before {
+	border: none;
+	top: auto;
+	left: auto;
+	bottom: auto;
+	right: auto;
+}
+
+.mod_app label {
+   position: absolute;
+   bottom: 176px;
+}
+
+.mod_app label.label_apple {
+   left: 0;
+}
+
+.mod_app label.label_android {
+   right: 0;
+}
+
+.mod_app .qr {
+   width: 173px;
+   height: 173px;
+   position: absolute;
+   bottom: 0;
+}
+
+.mod_app .qr.qr_apple {
+   background-image: url(Apple.png);
+   left: 0;
+}
+
+.mod_app .qr.qr_android {
+   background-image: url(Android.png);
+   right: 0;
+}
+
+@media (max-width: 530px) {
+	.mod_app .mod_app_scrollcontent {
+		padding-bottom: 430px;
+	}
+	
+	.mod_app .qr.qr_apple {
+		bottom: 0;
+	}
+	
+	.mod_app label.label_apple {
+		
+	}
+	
+	.mod_app .qr.qr_android {
+		right: auto;
+		left: 0;
+		bottom: 220px;
+	}
+	
+	.mod_app label.label_android {
+	   right: auto;
+	   left: 0;
+	   bottom: 396px;
+	}
+}

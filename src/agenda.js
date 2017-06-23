@@ -39,6 +39,8 @@ $(document).ready(function() {
 	// close popup on block layer click
 	$('#popupBlocklayer').click(closePopup);
 	$('#popup').click(closePopup);
+	
+	$('#app-download').click(showAppPopup);
 });
 
 $(window).bind( "hashchange", function() {
@@ -472,6 +474,11 @@ window.showPopup = function (sId) {
 		.replace("{{time}}", sTime);
 
 	openPopup(sTemplate);
+};
+
+window.showAppPopup = function () {
+	var sHtml = $("#eventapp-detail-popup").html();
+	openPopup(sHtml);
 };
 
 function openPopup(sContent) {
