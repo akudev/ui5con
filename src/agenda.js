@@ -39,6 +39,8 @@ $(document).ready(function() {
 	// close popup on block layer click
 	$('#popupBlocklayer').click(closePopup);
 	$('#popup').click(closePopup);
+	
+	$('#app-download').click(showAppPopup);
 });
 
 $(window).bind( "hashchange", function() {
@@ -386,18 +388,14 @@ function addOrReplaceUrlParameter(sParam, sNewData) {
 	if (window.location.search == "")
 		return window.location.href + "?" + sStringToAdd;
 
-	if (window.location.search.indexOf(sParam +'=') == -1)
-		return window.location.href + sStringToAdd;
-
-	var newSearchString = "";
-	var searchParams = window.location.search.substring(1).split("&");
-	for (var i = 0; i < searchParams.length; i++) {
-		if (searchParams[i].indexOf(sParam +'=') > -1) {
-			searchParams[i] = sStringToAdd;
-			break;
-		}
+	if(window.location.search.indexOf(sStringToAdd) >= 0) {
+		return window.location.href;
 	}
-	return window.location.href.split("?")[0] + "?" + searchParams.join("&");
+
+	// Currently only one parameter - view - is used,
+	// so it is not necessary to take care of given parameters, just rewrite it.
+	var sUrl =  window.location.href.split("?")[0] + "?" + sStringToAdd;
+	return sUrl;
 }
 
 function _addMinutes(date, minutes) {
@@ -413,19 +411,23 @@ $ = jQuery;
 
 window.showPopup = function (sId) {
 	var aSegments = sId.split("@@||@@");
+	var aSpeakers = aSegments[0].split(",");
 	var oDetailTopic = null;
 	var oDate = oInitialDate;
-	var oSpeaker = null;
+	var aSpeakersInfo = [];
 	var oAllTracks = Object.assign(oTracks, oBooths);
 	var sSpeakerName = aSegments[0].trim().toUpperCase();
 
-	$.each(oSpeakers, function (sIndex, oSpeakerItem) {
-
-		if(oSpeakerItem.name.trim().toUpperCase() == aSegments[0].toUpperCase()) {
-			oSpeaker = oSpeakerItem;
-			return false;
-		}
-	});
+	// find speaker info
+	for(var i = 0; i < aSpeakers.length; i++) {
+		aSpeakersInfo[i] = null;
+		$.each(oSpeakers, function (sIndex, oSpeakerItem) {
+			if(oSpeakerItem.name.trim().toUpperCase() == aSpeakers[i].trim().toUpperCase()) {
+					aSpeakersInfo[i] = oSpeakerItem;
+					return false;
+			}
+		});
+	}
 
 	$.each(oAllTracks, function(sTrackIndex, aTopics) {
 		if (!oDetailTopic) {
@@ -447,28 +449,36 @@ window.showPopup = function (sId) {
 		return;
 	}
 
-	// prepare speakers names in case of 2 or more names
-	var sSpeakersHtml = oDetailTopic.speaker;
-	var aSpeakers = sSpeakersHtml.split(",");
-	if(aSpeakers.length > 1) {
-		sSpeakersHtml = aSpeakers.map(function (sSpeaker) {
-			return sSpeaker.trim();
-		}).join("<br>");
-	}
-
 	var oEndDate = _addMinutes(oDate, oDetailTopic.duration);
 	var sTime = _getTimeSpanAsString(oDate, oEndDate);
 
 	var sTemplate = $("#session-detail-template").html();
+
+	// prepare speakers fragment
+	var sSpeakerLinkTemplate ="<a href=\"agenda.html?view=speakers#{{speaker_id}}\">{{speaker}}</a>";
+	var sSpeakersHtml =  aSpeakers.map(function(sSpeaker, index) {
+		if(aSpeakersInfo[index] != null) {
+			return sSpeakerLinkTemplate
+				.replace("{{speaker_id}}", aSpeakersInfo[index].id)
+				.replace("{{speaker}}", sSpeaker);
+		}
+		else {
+			return sSpeaker;
+		}
+	}).join("<br/>");
+
 	sTemplate = sTemplate.replace("{{title}}", oDetailTopic.title)
-		.replace("{{speaker_id}}", oSpeaker ? oSpeaker.id : "")
 		.replace("{{abstract}}", oDetailTopic.abstract)
-		.replace("{{speaker}}", sSpeakersHtml)
-		.replace("{{picture}}", oSpeaker ? oSpeaker.picture : "")
+		.replace("{{speakers}}", sSpeakersHtml)
 		.replace("{{type}}", oDetailTopic.type)
 		.replace("{{time}}", sTime);
 
 	openPopup(sTemplate);
+};
+
+window.showAppPopup = function () {
+	var sHtml = $("#eventapp-detail-popup").html();
+	openPopup(sHtml);
 };
 
 function openPopup(sContent) {

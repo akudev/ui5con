@@ -1,6 +1,7 @@
 
 /* imports */
 @import url(core.css);
+@import url(mod_app.css);
 @import url(mod_header.css);
 @import url(mod_lineup.css);
 @import url(mod_info.css);
