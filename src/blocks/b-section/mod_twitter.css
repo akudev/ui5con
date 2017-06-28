@@ -1,0 +1,10 @@
+/* mod_info */
+.b-section.mod_twitter {
+    margin-top: 95px;
+    }
+
+@media (max-width: 980px) {
+    .b-section.mod_twitter {
+        margin-top: 45px;
+    }
+}
