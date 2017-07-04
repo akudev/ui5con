@@ -6,6 +6,10 @@
 	background-size: cover;
 }
 
+.b-header.mod_agenda.mod_material {
+	height: 215px;
+}
+
 .b-header.mod_agenda .b-header__logo {
 	height: 60px;
 	margin: 10px auto;

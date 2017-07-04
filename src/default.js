@@ -1,5 +1,6 @@
 require('file-loader?name=[name].[ext]!./index.html');
 require('file-loader?name=[name].[ext]!./agenda.html');
+require('file-loader?name=[name].[ext]!./material.html');
 var markerImg = require('./blocks/b-direction/marker.png');
 
 // MAP
