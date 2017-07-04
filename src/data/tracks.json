@@ -85,7 +85,8 @@
 			"material": {
 				"Slides": "https://de.slideshare.net/michadelic/ui5consap-2017-slides-for-session-collaborators-wanted-for-ui5lab-a-custom-ui5-repo",
 				"GitHub Repository": "https://github.com/UI5Lab/UI5Lab-central",
-				"Demo": "https://ui5lab.io"
+				"Blog": "https://medium.com/@stermi/custom-control-101-sapui5-openui5-tipoftheday-customcontrol-fd51a85bbed3"
+				"Demo": "https://github.com/michadelic/ui5lab-ui5con-demo"
 			}
 		},
 		{
