@@ -10,7 +10,7 @@ function fillTracks(oTracks) {
     var oResult = $("#material");
     $.each(oTracks, function(sTrackIndex, oTrack){
 
-        var sHeader = "<div class=\"b-track__header b-font size_15 color_white b-ui\">{{track}}</div>";
+        var sHeader = "<div class=\"b-track__header b-font size_18 color_white b-ui\">{{track}}</div>";
         var sTrackHeader = "";
         switch(sTrackIndex) {
             case "track1": sTrackHeader = "ROOM A"; break;

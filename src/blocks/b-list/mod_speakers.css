@@ -3,6 +3,10 @@ display: block;
 	width: 90%;
 }
 
+.b-list.mod_material {
+	display: block;
+}
+
 .b-list.mod_speakers .b-list__item {
 	border: 1px solid #19181e;
 }
