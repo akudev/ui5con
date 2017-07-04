@@ -14,7 +14,7 @@
 
 @media (max-width: 390px) {
 	.b-list.mod_mainmenu .b-list__item {
-		padding: 10px 10px;
+		padding: 10px 7px;
 	}
 
 	.b-list.mod_mainmenu .b-list__item .b-font.size_18 {

@@ -84,7 +84,7 @@
 			"abstract":"<p>UI5 makes creation of custom controls and extensions of the framework very easy. With project \"UI5Lab\" - a community-driven initiative started in April - we created a concept for a public place to share, contribute, and consume these artifacts in your application projects. UI5Lab is an exceptional project where UI5 developers and the Community collaborate interactively on Slack, Trello, and GitHub to discuss best practices and drive the topic. We are jointly working on the project's mission and are actively looking for contributors in all areas of the project.<br/>Join @michadelic and @stermi to see the current status of the UI5Lab prototype and learn how to contribute to make it a success!</p>",
 			"material": {
 				"Slides": "https://de.slideshare.net/michadelic/ui5consap-2017-slides-for-session-collaborators-wanted-for-ui5lab-a-custom-ui5-repo",
-				"GitHub Repository": "https://github.com/UI5Lab/UI5Lab-central",
+				"GitHub": "https://github.com/UI5Lab/UI5Lab-central",
 				"Blog": "https://medium.com/@stermi/custom-control-101-sapui5-openui5-tipoftheday-customcontrol-fd51a85bbed3",
 				"Demo": "https://github.com/michadelic/ui5lab-ui5con-demo"
 			}
