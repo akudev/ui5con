@@ -8,6 +8,7 @@ const config = {
     entry: {
         core: path.resolve(PROJECT_ROOT, 'src/default.js'),
         agenda: path.resolve(PROJECT_ROOT, 'src/agenda.js'),
+        material: path.resolve(PROJECT_ROOT, 'src/material.js'),
         styles: path.resolve(PROJECT_ROOT, 'src/blocks/index.css'),
     },
 
