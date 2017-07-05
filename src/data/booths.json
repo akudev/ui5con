@@ -46,7 +46,10 @@
 			"speaker": "Yavor Ivanov",
 			"type": "Session",
 			"duration": 40,
-			"abstract": "You use openui5 to build your publicly facing home page and site content. There are few tricks you can use to make sure search engines can find and understand your content. You will learn about structuring your links, JS rendering of dynamic content and more advanced topics like pre-rendering."
+			"abstract": "You use openui5 to build your publicly facing home page and site content. There are few tricks you can use to make sure search engines can find and understand your content. You will learn about structuring your links, JS rendering of dynamic content and more advanced topics like pre-rendering.",
+			"material": {
+				"Slides":"https://www.slideshare.net/YavorIvanov6/ui5con-seo-for-openui5-apps"
+			}
 		},
 		{
 			"type": "break",
