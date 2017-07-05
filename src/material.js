@@ -8,9 +8,14 @@ $(document).ready(function() {
 
 function fillTracks(oTracks) {
     var oResult = $("#material");
+
+    var oNavigationItems = {};
+	var oNavigationElement = $("#navigation");
+	var sNavItemTemplate =  $("#nav-item-template").html();
+
     $.each(oTracks, function(sTrackIndex, oTrack){
 
-        var sHeader = "<div class=\"b-track__header b-font size_18 color_white b-ui\">{{track}}</div>";
+        var sHeader = "<div id=\"{{id}}\" class=\"b-track__header b-font size_18 color_white b-ui\">{{track}}</div>";
         var sTrackHeader = "";
         switch(sTrackIndex) {
             case "track1": sTrackHeader = "ROOM A"; break;
@@ -20,8 +25,11 @@ function fillTracks(oTracks) {
             case "booth2": sTrackHeader = "BOOTH 2"; break;
             case "booth3": sTrackHeader = "BOOTH 3"; break;
         }
-        sHeader = sHeader.replace("{{track}}", sTrackHeader);
+        sHeader = sHeader
+            .replace("{{id}}", sTrackIndex)
+            .replace("{{track}}", sTrackHeader);
         oResult.append(sHeader);
+	    oNavigationItems[sTrackIndex] = sTrackHeader;
 
         var bTrackEmpty = true;
         $.each(oTrack, function(sTopicIndex, oTopic) {
@@ -36,6 +44,13 @@ function fillTracks(oTracks) {
         } else {
             oResult.append("<br>");
         }
+    });
+
+	$.each(oNavigationItems, function(sIndex, sTitle) {
+		var oLetterItem = sNavItemTemplate
+            .replace("{{hash}}", sIndex)
+            .replace("{{title}}", sTitle);
+		oNavigationElement.append(oLetterItem);
     });
 }
 

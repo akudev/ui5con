@@ -103,3 +103,6 @@
     right: 25px;
     bottom: 50px;
 }
+.b-topic__content a {
+    word-break: break-word;
+}
