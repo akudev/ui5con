@@ -171,7 +171,11 @@
 			"speaker": "Stephan Heyne",
 			"type": "Session",
 			"duration": 40,
-			"abstract": "Custom SAP Fiori launchpad tiles can now be developed similar like SAPUI5 apps are created. This session is marked as a teaser as this is a new approach which is not yet available on all Fiori technology stacks."
+			"abstract": "Custom SAP Fiori launchpad tiles can now be developed similar like SAPUI5 apps are created. This session is marked as a teaser as this is a new approach which is not yet available on all Fiori technology stacks.",
+			"material": {
+				"Slides": "https://de.slideshare.net/StephanHeyne/implementing-custom-tiles-for-sap-fiori-launchpad/StephanHeyne/implementing-custom-tiles-for-sap-fiori-launchpad",
+				"GitHub": "https://github.com/heynest/fiori-launchpad-custom-tile"
+			}
 		},
 		{
 			"type": "break",
