@@ -138,7 +138,12 @@
 			"speaker": "Matthias Oßwald, Merlin Beutlberger",
 			"type": "Lecture",
 			"duration": 40,
-			"abstract":"<p>Learn how to continuously develop, build and test UI5 Apps using Open Source Node.js based tools.</p><p>You will see how to apply dependency loading, bundling, minification und automated testing in your UI5</p>"
+			"abstract":"<p>Learn how to continuously develop, build and test UI5 Apps using Open Source Node.js based tools.</p><p>You will see how to apply dependency loading, bundling, minification und automated testing in your UI5</p>",
+			"material": {
+				"Slides": "https://github.com/RandomByte/talks/blob/master/UI5con_at_SAP_2017/UI5con_CI_Lecture.pdf",
+				"GitHub": "https://github.com/SAP/openui5-sample-app"
+
+			}
 		},
 		{
 			"type": "break",
@@ -277,7 +282,10 @@
 			"speaker": "Aparna Narayanaswamy",
 			"type": "Lecture",
 			"duration": 20,
-			"abstract": "<p>Modern browsers provide Web Speech API, enabling the application of speech recognition in web applications.</p><p>We have developed an application that demonstrates how this browser capability can be leveraged in the FLP as a control mechanism.</p>"
+			"abstract": "<p>Modern browsers provide Web Speech API, enabling the application of speech recognition in web applications.</p><p>We have developed an application that demonstrates how this browser capability can be leveraged in the FLP as a control mechanism.</p>",
+			"material": {
+				"Slides": "https://www.slideshare.net/AparnaN13/ui5con-controlling-ui5-app-and-flp-via-speech"
+			}
 		},
 		{
 			"type": "break",
