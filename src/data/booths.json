@@ -23,7 +23,11 @@
 			"speaker": "Petya Begovska",
 			"type": "Session",
 			"duration": 40,
-			"abstract": "<p>The starting point for everyone working with UI5 is the Demo Kit Application. Here you can find all the needed information such as API Reference, Developer Guide, Samples and Demo apps.</p><p>Now, it is completely redesigned to showcase the innovative, responsive and multi theme capable UI5 framework!</p><p>Come and see the new Demo Kit app accessible on any device, with modern look and feel and easy to use. Provide your valuable feedback so we can make it even better!</p>"
+			"abstract": "<p>The starting point for everyone working with UI5 is the Demo Kit Application. Here you can find all the needed information such as API Reference, Developer Guide, Samples and Demo apps.</p><p>Now, it is completely redesigned to showcase the innovative, responsive and multi theme capable UI5 framework!</p><p>Come and see the new Demo Kit app accessible on any device, with modern look and feel and easy to use. Provide your valuable feedback so we can make it even better!</p>",
+			"material": {
+				"Slides": "https://www.slideshare.net/PetyaBegovska/new-demo-kit-your-way-to-ui5",
+				"Demo": "https://openui5nightly.hana.ondemand.com"
+			}
 		},
 		{
 			"type": "break",
