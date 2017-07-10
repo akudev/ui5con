@@ -125,7 +125,10 @@
 			"speaker": "András Kónya, Lóránt Guth",
 			"type": "Session",
 			"duration": 40,
-			"abstract": "<p>Imagine a world where development and business can understand each other without using lengthy code lines. Applying human-readable language you will have the possibility to enable everyone in your team, even your customers, to create business driven automated tests.</p><p>Our solution will lead your agile workflow towards acceptance testing using OPA5 and Cucumber over Fiori stack which provide basis for behavior driven development.</p><p>We are going to present a Cucumber and OPA5-based test automation framework where users write test scenarios adopting human-readable Gherkin language. Additionally, we will talk about the key test concepts of healthy test automation pyramids, appropriate placement of test levels, and misconcepts about TDD and BDD.</p>"
+			"abstract": "<p>Imagine a world where development and business can understand each other without using lengthy code lines. Applying human-readable language you will have the possibility to enable everyone in your team, even your customers, to create business driven automated tests.</p><p>Our solution will lead your agile workflow towards acceptance testing using OPA5 and Cucumber over Fiori stack which provide basis for behavior driven development.</p><p>We are going to present a Cucumber and OPA5-based test automation framework where users write test scenarios adopting human-readable Gherkin language. Additionally, we will talk about the key test concepts of healthy test automation pyramids, appropriate placement of test levels, and misconcepts about TDD and BDD.</p>",
+			"material": {
+				"Slides": "https://www.slideshare.net/secret/I8CXYMujuQnVjZ"
+			}
 		},
 		{
 			"type": "break",
